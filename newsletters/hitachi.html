@@ -1,0 +1,423 @@
+<html><head><title>Hitachi Ltd (HTHIY) Deep Dive Analysis :: Reader View</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+html {
+  overflow: overlay;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+}
+body[data-mode="light"] {
+  color:  #222;
+  background-color:  whitesmoke;
+}
+body[data-mode="dark"] {
+  color:  #eee;
+  background-color:  #333;
+}
+body[data-mode="sepia"] {
+  color:  #5b4636;
+  background-color:  #f4ecd8;
+}
+body[data-mode="solarized-light"] {
+  color:  #586e75;
+  background-color:  #fdf6e3;
+}
+body[data-mode="nord-light"] {
+  color:  #2e3440;
+  background-color:  #e5e9f0;
+}
+body[data-mode="groove-dark"] {
+  color:  #cec4ac;
+  background-color:  #282828;
+}
+body[data-mode="solarized-dark"] {
+  color:  #93a1a1;
+  background-color:  #002b36;
+}
+body[data-mode="nord-dark"] {
+  color:  #e5e9f0;
+  background-color:  #2e3440;
+}
+@media print {
+  body[data-mode="light"],
+  body[data-mode="dark"],
+  body[data-mode="sepia"],
+  body[data-mode="solarized-light"],
+  body[data-mode="nord-light"],
+  body[data-mode="groove-dark"],
+  body[data-mode="solarized-dark"],
+  body[data-mode="nord-dark"] {
+    color: #000;
+    background-color: #fff;
+  }
+}
+body[data-loaded=true] {
+  
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+img:not([width])[src$=".svg"] {
+  max-width: 100px;
+}
+body[data-images=false] canvas,
+body[data-images=false] svg,
+body[data-images=false] img {
+  display: none;
+}
+a {
+  color: #0095dd;
+  text-decoration: none;
+}
+#reader-domain {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border-bottom-color: currentcolor;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: inline-block;
+  direction: ltr;
+}
+#reader-domain > span:first-child {
+  font-size: 1.1em;
+}
+#reader-domain > span:last-child {
+  font-size: 0.8em;
+}
+#reader-title {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+}
+#reader-credits,
+#doi,
+#published-time,
+#reader-estimated-time {
+  font-size: 0.85em;
+  line-height: 1.48em;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+#reader-credits:not(:empty)::after {
+  content: ' ⋮ ';
+}
+#published-time:not(:empty)::before {
+  content: ' ⋮ ';
+}
+#doi-json {
+  overflow: hidden;
+}
+#doi-json code {
+  overflow: auto;
+  max-height: 400px;
+}
+#published-time:empty,
+#reader-credits:empty {
+  display: none;
+}
+body[data-speech="true"] .tts-box {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 32px;
+  z-index: 1;
+  pointer-events: none;
+  box-shadow: 0 0 0 1000vw rgba(128, 128, 128, 0.2);
+}
+body[data-speech="true"] .tts-word {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  background-color: red;
+  height: 2px;
+}
+.tts-word.hidden,
+.tts-box.hidden {
+  display: none;
+}
+body[data-speech="false"] .tts-speaking::after {
+  display: none;
+}
+mark.hghlght {
+  background-color: #ffff81;
+}
+.hidden {
+  display: none;
+}
+</style>
+  <style id="user-css">body {
+  padding-bottom: 64px;
+}
+a:visited {
+  color: #d33bf0;
+}
+a:link, a:link:hover, a:link:active {
+  color: #0095dd;
+}
+a:link {
+  text-decoration: none;
+  font-weight: normal;
+}
+pre {
+  white-space: pre-wrap;
+}
+pre code {
+  background-color: #eff0f1;
+  color: #393318;
+  font-family: monospace;
+  display: block;
+  padding: 5px 10px;
+}
+body[data-mode="dark"] pre code {
+  background-color: #585858;
+  color: #e8e8e8;
+}
+
+/* CSS for sans-serif fonts */
+body[data-font=sans-serif] {}
+/* CSS for serif fonts */
+body[data-font=serif] {}
+
+/* CSS for "sepia" theme */
+body[data-mode=sepia] {
+}
+/* CSS for "light" theme */
+body[data-mode=light] {}
+/* CSS for "dark" theme */
+body[data-mode=dark] {}</style>
+</head>
+<body data-images="true" data-mode="light" data-font="serif" data-loaded="true">
+  <span></span> <!-- for IntersectionObserver -->
+  <a id="reader-domain" href="https://www.lynalden.com/premium-2021-2-14/">
+    <span>www.lynalden.com</span>
+    <span>/premium-2021-2-14/</span>
+  </a>
+  <h1 dir="auto" id="reader-title">Hitachi Ltd (HTHIY) Deep Dive Analysis</h1>
+  <span dir="auto" id="reader-credits"></span>
+  <span dir="auto" id="reader-estimated-time">29-36 minutes</span>
+  <span dir="auto" id="published-time"></span>
+  <hr>
+  <div id="readability-page-1" class="page"><div><main><article class="page" aria-label="Hitachi Ltd (HTHIY) Deep Dive Analysis" itemscope="" itemtype="https://schema.org/CreativeWork"><div itemprop="text"><p><em>February 14, 2021</em></p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-feature.jpg" sizes="(max-width: 700px) 100vw, 700px" srcset="https://www.lynalden.com/wp-content/uploads/premium-feature.jpg 700w, https://www.lynalden.com/wp-content/uploads/premium-feature-300x129.jpg 300w" alt="Premium Feature Image" width="700" height="300"></p>
+<p>This report covers macro conditions, provides notes on the dollar, bitcoin, and ethereum, updates the various portfolios, and then finishes our series on Japanese value stocks by highlighting Hitachi, a successful turnaround story so far.</p>
+<p><strong>Housekeeping notes:</strong></p>
+<p>I just published a <a href="https://www.lynalden.com/economic-japanification/" target="_blank" rel="noopener">new article</a> today on Japan’s fiscal and monetary policy over the past couple decades.</p>
+<p>I also posted a <a href="https://www.lynalden.com/blockfi/" target="_blank" rel="noopener">shorter piece</a> today about the risks and rewards of BlockFi; a place where folks can earn 5-8% yields on some digital tokens or dollar stablecoin deposits.</p>
+<p>Lastly, I had an interview with Edward Harrison that covered a lot of macro topics last week, centered around the Treasury yield curve. It’s behind Real Vision’s paywall but I have a private link for readers <a href="https://www.realvision.com/reflation-rally-or-market-bubble-the-yield-curve-will-show-the-way?utm_source=contributor&amp;utm_medium=referral&amp;utm_campaign=20210211_LA_GH_CONT_W1_LINK" target="_blank" rel="noopener">here</a>. Out of courtesy for Real Vision, please don’t share the link on social media.</p>
+<h2>Macro View</h2>
+<p>Coronavirus cases continue to trend down sharply in the United States, and this is true for most of the world as well:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-daily-cases.png" alt="Daily Cases" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-daily-cases.png 689w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-daily-cases-300x166.png 300w" sizes="(max-width: 689px) 100vw, 689px" width="689" height="382"></p>
+<p><em>Chart Source: Worldometer</em></p>
+<p>This is also true for similar metrics, like hospitalizations and deaths. There is still headline risk; various strains keep emerging, and there are occasional reports of re-infection or strains being more resistant to a particular vaccine.</p>
+<p>So that’s a persistent tail risk, that eventually one of these variants might be particularly bad, push cases back up, make vaccines less effective, and that governments would go through another round of lockdowns trying to address it. Statistically speaking, that’s not my base case.</p>
+<p>In related news, a big study has shown that Russia’s vaccine is more effective than folks initially assumed.</p>
+<p>Russia’s vaccine was rolled out quickly before final tests were completed (while the Pfizer and Moderna vaccines were still undergoing final tests) and they received appropriate criticism for doing so. Many folks thought it wouldn’t be particularly safe or effective, and indeed for example China’s vaccine ended up not being very effective.</p>
+<p>However, a <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00234-8/fulltext" target="_blank" rel="noopener">recent peer-reviewed study</a> in <em>The Lancet</em> found that Russia’s vaccine is actually among the top three vaccines in terms of efficacy, and with no unusual side effects. More than two dozen countries have approved it now, and Russia is emphasizing emerging markets with it. It can be stored in the fridge rather than requiring deep-freezing like some of the other vaccines require. It can also potentially accelerate vaccination in Europe this spring/summer. It’s challenging to produce, so Russia is working with other countries to manufacture it as well.</p>
+<p>Overall, we have good news on the virus front. Multiple vaccines are going out, albeit not at the same rate everywhere, and the virus is on the downtrend at the moment.</p>
+<p><strong>Jobs and Sentiment</strong></p>
+<p>The picture is less rosy for jobs and consumers. Although asset prices enjoyed a V-shaped recovery, jobs and consumer sentiment remain in a backward square root sign recovery, with a bounce and then a plateau at a lower level:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-jobs-sentiment.png" alt="Jobs and Sentiment" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-jobs-sentiment.png 650w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-jobs-sentiment-300x192.png 300w" sizes="(max-width: 650px) 100vw, 650px" width="650" height="416"></p>
+<p>Federal Reserve Chairman Jerome Powell recently cited this issue, stating that overall joblessness is higher than the headline 6.3% when you include people who have been lengthily detached from the workforce or underemployed for their qualifications but technically employed in an absolute sense.</p>
+<p>This situation keeps the Fed dovish and keeps fiscal policymakers on high alert.</p>
+<p>Robin Brooks, former chief FX strategist at Goldman Sachs, <a href="https://twitter.com/RobinBrooksIIF/status/1360962451756511233" target="_blank" rel="noopener">posted</a> an important chart today about the employment-to-population ratio among prime age men. The US (pink line below) is now down near the bottom of the list along with southern European nations like Spain, Italy, and Greece.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-unemployment.png" alt="Unemployment" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-unemployment.png 383w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-unemployment-300x282.png 300w" sizes="(max-width: 383px) 100vw, 383px" width="383" height="360"></p>
+<p><em>Chart Source: Robin Brooks</em></p>
+<p>Numbers approaching 80% or below for this metric make a country ripe for political populism at minimum, and more impactfully, political protest, storming capitol buildings, and other forms of civil unrest.</p>
+<p>This mirrors what I’ve pointed out in some recent reports; Japan now has a higher labor participation rate than the United States despite having a median age that is 10 years older.</p>
+<p>Congress is watching figures like that, which is why we’re seeing some degree of rare bipartisan support for stimulus, which benefits many of our hard asset positions. Persistent <a href="https://www.lynalden.com/fraying-petrodollar-system/" target="_blank" rel="noopener">de-industrialization of the US economy</a> in recent decades is starting to cause more acute political issues and calls for a turnaround in that policy.</p>
+<p><strong>Acquittal, then Stimulus</strong></p>
+<p>The past couple weeks in the US Senate have been consumed by the trial of former President Trump regarding incitement of insurrection. The House impeached him for the second time, which brought it up to the Senate. A 57-vote majority of senators voted guilty, including several Republican senators, but a supermajority is required for this big event, which was not reached. So, Trump was acquitted.</p>
+<p>Going forward, more emphasis in the Senate will be on debating the various fiscal aid proposals. Watching those will be important for inflation expectations, money supply growth, long-end Treasury yields, and the dollar over the coming months. They’ll also be looking at the recent Wall Street Bets and Robinhood situation via some Congressional events on that subject.</p>
+<p>We’re in a “macro heavy” environment, with a lot of asset correlations tied together around the inflation/deflation theme. Doing a $1.9 trillion stimulus or not doing it, and when, has a big impact on several asset classes, and is a key event to watch regardless of which side of the political spectrum we’re all on.</p>
+<p><strong>Dollar and Treasury Updates</strong></p>
+<p>A month ago in my January 17th report, I wrote that although I remain long-term dollar bearish (since October 2019), I was turning dollar neutral-to-bullish for Q1 2021 as a tactical bounce within that bearish trend.</p>
+<p>This tactical shift was because the US Treasury was planning to perform massive bond issuance in Q1 compared to what the Federal Reserve was prepared to buy, which would suck liquidity out of the system.</p>
+<p>However, on February 1st, the Treasury (now under Janet Yellen, rather than Steven Mnuchin) <a href="https://home.treasury.gov/news/press-releases/jy0011" target="_blank" rel="noopener">announced</a> plans to revise down their Q1 net Treasury issuance from $1.127 trillion to $274 billion, which is a huge $853 billion (75%) reduction. They also plan to have low net Treasury issuance in Q2, although that may change based on stimulus decisions.</p>
+<p>Instead of large Treasury issuance as initially planned, they will draw down the Treasury General Account or “TGA”.</p>
+<p>The TGA is the Treasury’s checking account at the Federal Reserve; money that they’ve collected but not yet spent, and the Yellen Treasury seems more intent than the Mnuchin Treasury on drawing down this figure closer towards normal levels. In other words, they can let out a surge of cash without a corresponding bond issuance by drawing down the TGA, since they’ve already collected this cash from prior bond issuance.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-tga.png" alt="Treasury General Account" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-tga.png 700w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-tga-300x193.png 300w" sizes="(max-width: 700px) 100vw, 700px" width="700" height="450"></p>
+<p><em>Chart Source: St. Louis Fed</em></p>
+<p>All else being equal, drawing down on the TGA and keeping Treasury issuance light is a relatively dollar bearish plan. Since my brief tactical dollar neutral-to-bullish view from a month ago, we indeed got a little bounce and then a pullback, and overall the dollar has been flat for the month. I’m shifting back towards my baseline neutral-to-bearish dollar position.</p>
+<p>The one dollar-bullish variable to be aware of, however, is that if the long end of the Treasury curve keeps rising along with inflation expectations, and thus keeps inflation-adjusted yields from getting more negative, it can keep a temporary floor on the dollar.</p>
+<p>With very loose fiscal policy (relative to other governments), moderate monetary policy (relative to other central banks), and a large trade deficit (relative to major trading partners), the longer-term structural force for the dollar likely remains downward. This monetary policy variable by the Fed, particularly in regards to their rate of Treasury purchases, remains the only sticking point.</p>
+<p>There are potentially a few decision points in the coming months to watch as it relates to the Fed’s monetary policy, because if they don’t buy enough Treasuries and yields keep pushing up, that could temporarily stabilize the dollar for a while but also cause a liquidity issue at some point.</p>
+<p>Overall, until the dollar index either breaks firmly above 92 (previous consolidation level) or firmly below 88 (making a new multi-year bottom), it’s relatively uninteresting.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-dxy.jpeg" alt="DXY" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-dxy.jpeg 746w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-dxy-300x188.jpeg 300w" sizes="(max-width: 746px) 100vw, 746px" width="746" height="468"></p>
+<p>So, I’m back to being neutral-to-bearish on the dollar, but watching certain support and resistance lines pretty closely here.</p>
+<h2>Bitcoin Note</h2>
+<p>In my previous report on January 31st, bitcoin was $32,600 and I wrote that it is still in a correction but that it may have bottomed. I went on to describe with charts how the various on-chain metrics still suggested that bitcoin was in a structural bull market.</p>
+<p>The actionable summary from that report was:</p>
+<blockquote><p>High-conviction bitcoin bulls can and will buy dips that occur. However, more cautious investors can wait for a firm breakout over $42,000 to ensure the bitcoin bull market is intact, rather than a larger correction being underway. The asset would be somewhat de-risked at that point, with overhead resistance removed and bullish momentum confirmed.</p></blockquote>
+<p>Bitcoin’s price did recover since then, and broke out over $42,000 when Tesla announced that they now hold $1.5 billion in bitcoin as a Treasury reserve asset. This makes them the third company on a major US exchange (NYSE or NASDAQ) to have bitcoin on their corporate balance sheet as a store of value.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-btc-price.png" alt="BTC Price" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-btc-price.png 699w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-btc-price-300x150.png 300w" sizes="(max-width: 699px) 100vw, 699px" width="699" height="350"></p>
+<p>Bank of New York Mellon (BK), America’s oldest bank, announced last week that they’ll begin offering services for bitcoin and other digital assets later this year, including custody solutions, and allowing for them to transfer through the same financial plumbing system that they use for more traditional assets.</p>
+<p>On the other hand, Nigeria and India have sought to ban digital assets.</p>
+<p>In Nigeria, which is suffering from double-digit inflation, a lot of people use bitcoin as a store of value, and the government has blamed this for their currency’s shortcomings.</p>
+<p>India previously tried to ban digital assets as well, or more specifically their central bank said that banks in the country couldn’t work with digital asset exchanges, but their Supreme Court shot the ban down after it was challenged in court. Now, politicians are working on a bill that, if passed, would ban private digital assets over time to try to eliminate competition from a government-issued digital currency that they have discussed launching.</p>
+<p>The issue with these sorts of bans is that the public still generally goes around it, using peer-to-peer trading activities, while the rest of the world passes the country by and keeps developing professional custody/trading solutions and bank integration.</p>
+<p>The United States banned gold ownership for American citizens from 1933-1974, during which time they significantly devalued the dollar and Treasuries. That’s not unlike the bitcoin ban that some countries are grappling with in regards to digital assets. This chart shows the inflation-adjusted annual returns of 10-year US Treasuries when bought that year and held to maturity, along with the period of illegal gold ownership annotated:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-treasury-returns.png" alt="US Treasury Returns" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-treasury-returns.png 578w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-treasury-returns-300x260.png 300w" sizes="(max-width: 578px) 100vw, 578px" width="578" height="500"></p>
+<p>Bitcoin still looks relatively mid-bull-cycle among indicators, and could potentially tag over $100,000 this year, although the higher it gets, the less asymmetric the asset gets for this cycle, and the more it develops risk to the downside or risk for lengthy consolidation.</p>
+<p>The HODL wave shows that recent price appreciation still hasn’t been enough to get a ton of selling from long-term cold storage holders, which suggest more bullishness over a 6+ month period:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hodl-wave.png" alt="HODL Wave" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hodl-wave.png 666w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hodl-wave-279x300.png 279w" sizes="(max-width: 666px) 100vw, 666px" width="666" height="715"></p>
+<p>The realized HODL cycle also looks good:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-rhodl-ratio.png" alt="RHODL Ratio" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-rhodl-ratio.png 667w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-rhodl-ratio-280x300.png 280w" sizes="(max-width: 667px) 100vw, 667px" width="667" height="715"></p>
+<p>And reserve risk looks good:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-reserve-risk.png" alt="Reserve Risk" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-reserve-risk.png 654w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-reserve-risk-274x300.png 274w" sizes="(max-width: 654px) 100vw, 654px" width="654" height="715"></p>
+<p>Lastly, bitcoin miners aren’t selling much:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-miner-wallets.png" alt="Bitcoin Miner Activity" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-miner-wallets.png 606w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-miner-wallets-231x300.png 231w" sizes="(max-width: 606px) 100vw, 606px" width="606" height="787"></p>
+<p><em>Chart Source: <a href="https://twitter.com/glassnode/status/1361067866431385608" target="_blank" rel="noopener">Glassnode</a></em></p>
+<p>This lack of miner selling is another limiter for bitcoin supply that helps keep price up.</p>
+<p>There are many potential reasons for lack of miner selling but the one I’d argue is overlooked is the global semiconductor shortage that has materialized for several months and impacted multiple industries. Bitcoin mining equipment is sold out months in advance, as the makers can’t source enough semiconductor ships to make more.</p>
+<p>Normally, with bitcoin’s price having gone up substantially, more miners would have entered the space to take advantage of that by now, which would drive the protocol’s pre-programmed difficulty adjustment up and force less-efficient miners to sell more coins to cover their costs. However, the lack of available semiconductors and mining rigs is keeping many new entrants out for now, and miner margins are pretty big because of that, so there’s less need for them to sell their coins for now.</p>
+<p><strong>Bitcoin Summary</strong></p>
+<p>Overall, bitcoin is not as much of a slam-dunk purchase as it was back in the April-July 2020 period when I was initially writing about it (it’s up nearly 7x since my first recommendation for it in the April 12th report, and since I bought it on April 20th), but I continue to view it as an attractive portfolio allocation in 2021, taking into account risk and reward potential.</p>
+<p>Investors must be aware of the volatility, however, and manage their position size appropriately for their risk tolerance.</p>
+<p>I still think bitcoin likely has a ways to go in this cycle, as my base case. The next resistance level is around $50,000 due to round-number bias. There are a number of sell orders in at that important psychological level, which presents a bit of a ceiling here, but when/if bitcoin breaks over $50,000, the bull run would be back on.</p>
+<h2>Ethereum Note</h2>
+<p>In the January 31st report, ethereum was at $1,313 and was testing previous all-time highs set in late 2017. I wrote that if it firmly breaks over $1,400 then it should be quite bullish for the asset in the intermediate term.</p>
+<p>Indeed, it broke over that level and soared to $1,800+.</p>
+<p>The protocol is getting a lot of attention due to the decentralized finance applications running on it. However, its fees are getting extremely high, because the developers haven’t been fast enough at rolling out scaling solutions for it, which gives some smaller smart contract protocol competitors a window of opportunity to take market share.</p>
+<p>Overall, ethereum faces more implementation/technical risk at this point in time than Bitcoin. The same bullish forces that propel it higher are putting a lot of strain on it.</p>
+<p>Statistically speaking, ethereum and other alts could very well outperform bitcoin to the upside during the bull period of the cycle as they often do, but I’d be worried about a lot of digital assets, especially outside of bitcoin itself, on a down leg of the cycle in maybe 2022 or 2023.</p>
+<h2>Portfolio Updates</h2>
+<p>Here are a number of planned portfolio updates for next week.</p>
+<p><strong>Top 12 List</strong></p>
+<p>I’m replacing Tencent (TCEHY) with Alibaba (BABA) in the aggressive category of the Top 12 List.</p>
+<p>Tencent was an outstanding performer since I added it to the list, but it’s getting a bit pricey now, and so I consider it more of a “hold” than a “buy” at this price level.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-tcehy-performance.png" alt="Tencent Outperformance" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-tcehy-performance.png 650w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-tcehy-performance-300x192.png 300w" sizes="(max-width: 650px) 100vw, 650px" width="650" height="416"></p>
+<p>Thus, it has to come off the Top 12 List, although I still plan to hold it in my “Other Holdings” account.</p>
+<p>For the Top 12 List, I’m replacing Tencent with fellow Chinese stock giant Alibaba (BABA). Alibaba has had a lot more headline/political risk lately, and that has really dampened sentiment around the stock and kept valuations in check relative to their expected growth rate. It’s a huge ecommerce and cloud player with a lot of room to run in terms of growth.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-baba-valuation.png" alt="BABA Valuation" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-baba-valuation.png 650w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-baba-valuation-300x192.png 300w" sizes="(max-width: 650px) 100vw, 650px" width="650" height="416"></p>
+<p>However, the aggressive category is the place for it, due to the various headline/political risks that it faces. In other words, folks should maintain cautious position sizes.</p>
+<p><strong>Newsletter Portfolio</strong></p>
+<p>-In the growth stock pie, sell CHKP. Increase BABA, JD, FB, AMZN, and HDB from 10% to 12% each.</p>
+<p>CHKP is fine but overall, its growth rate is not currently enough to justify it more than an equity index in my view.</p>
+<p>Also if you’ve been following the Newsletter portfolio for a while, it might be a good time to consider clicking “rebalance” in the growth stock pie. MSTR has been a massive outperformer, up 7x since our entry point in summer 2020, so it would be good to check that it’s still within your preferred allocation limit.</p>
+<p><strong>Fortress Income and ETF-Only Portfolios</strong></p>
+<p>-Reviewed with no changes at this time.</p>
+<p><strong>No Limits Portfolio</strong></p>
+<p>-Sell 20 shares of Tencent (TCEHY). I still want to be long, but with less size after such a strong run in less than a year.</p>
+<p>-Sell 100 shares of the Grayscale Bitcoin Trust (GBTC), or 1/4th of the remaining position. I still like it, but it’s up about 5x from our starting point in summer 2020 and represents the largest position in the portfolio, so for risk management, I’m rebalancing it down a bit more. I’m retaining 300 shares as a sizable portfolio position.</p>
+<p>We’ve had nice gains in the No Limits portfolio since its inception in late June 2020 (the newest portfolio of the bunch), up 48% vs 26% for the S&amp;P 500 in less than eight months. So, I want to make sure to avoid over-concentration and keep those gains locked in for risk-management purposes, and for new investors that look to the portfolio for asset allocation ideas.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-no-limits-performance.png" alt="No Limits Performance" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-no-limits-performance.png 698w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-no-limits-performance-300x130.png 300w" sizes="(max-width: 698px) 100vw, 698px" width="698" height="302"></p>
+<p><em>Chart Source: Interactive Brokers</em></p>
+<p>-Buy 100 more shares of Sberbank (SBRCY), which I <a href="https://www.lynalden.com/premium-2021-1-3/" target="_blank" rel="noopener">updated here</a>&nbsp;a couple months ago.</p>
+<p>-Buy 10 shares of Hitachi (HTHIY), which is the feature stock of this report.</p>
+<p>-Buy 5 shares of Alibaba (BABA), the currently-out-of-favor Chinese cloud/e-commerce giant.</p>
+<p>-Buy 5 shares of Mitsui and Co (MITSY), one of the top five Japanese trading companies. I analyzed two other trading companies, <a href="https://www.lynalden.com/premium-2020-11-8/" target="_blank" rel="noopener">Itochu (ITOCY)</a> and <a href="https://www.lynalden.com/premium-2021-1-31/" target="_blank" rel="noopener">Sumitomo (SSUMY)</a>, and I like Mitsui just as much. Owning three of them represents a long-term macro play and reduces single-company risk.</p>
+<p>Mitsui EPS and dividends:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-mitsui-earnings.png" alt="Mitsui Earnings" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-mitsui-earnings.png 655w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-mitsui-earnings-300x210.png 300w" sizes="(max-width: 655px) 100vw, 655px" width="655" height="459"></p>
+<p><em>Data Source: Company Filings, Yahoo Finance</em></p>
+<p>Mitsui Debt/equity:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-mitsui-debt.png" alt="Mitsui Debt" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-mitsui-debt.png 654w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-mitsui-debt-300x209.png 300w" sizes="(max-width: 654px) 100vw, 654px" width="654" height="456"></p>
+<p><em>Data Source: Company Filings, Yahoo Finance</em></p>
+
+<p>Hitachi Ltd (TYO: 6501, OTC: HTHIY) is a Japanese multinational technology and infrastructure conglomerate that is getting near the end of a decade-long restructuring process. This restructuring already helped over the past decade and should provide a good foundation for the next decade to grow from.</p>
+<p><strong>Hitachi History and Japanese Corporate Reform</strong></p>
+<p>The company was founded over a century ago by an electrical engineer, and the first product was an induction motor.</p>
+<p>Over time, Hitachi became the “General Electric of Japan”, as a sprawling conglomerate with hundreds of businesses, engaged in everything from consumer electronics to industrial automation to mechanical parts to construction equipment to nuclear energy to information technology. Many of the businesses had no synergy with each other, other than generally being technical/industrial as a category.</p>
+<p>This was in-line with what the rest of the Japanese corporate sector looked like for decades. Many conglomerates operated in unfocused ways, and owned multiple joint ventures between themselves in a big interlocking puzzle.</p>
+<p>However, during the 30-year bear market that the Japanese economy and stock market have gone through, there has been a gradual shift towards better corporate governance. Particularly over the last decade, Japanese firms deleveraged, spun off non-core businesses and joint ventures, increased dividends, and began emphasizing higher returns on capital and better total returns for shareholders in general.</p>
+<p>Many companies also increased the number of independent directors on their boards, and brought in non-Japanese board members to complement their Japanese board members and have a global perspective, since many of them operate globally.</p>
+<p>Hitachi, under the leadership of Hiroaki Nakanishi, has been one of the most aggressive companies in Japan in terms of restructuring and re-focusing its company along this path.</p>
+<p><strong>Hitachi’s Restructuring</strong></p>
+<p>Beginning in 2010, after a series of massive losses, Hitachi began a decade-long restructuring process. Hiroaki Nakanishi, who had been with the company since 1970, became the company’s president in 2010, and currently he is the executive chairman.</p>
+<p>This restructuring emphasized profitability and good returns on capital, and has involved a series of divestitures and acquisitions to shift the company from being a random pile of tech/industrial businesses to being a large and diversified technology/industry business with a set of core lines of business that complement each other in a more unified way.</p>
+<p>They divested many lower-margin or legacy businesses, like consumer electronics, chemicals, and their hard drive business, and doubled-down on information technology, internet of things “IoT”, and global infrastructure. They also began steadily increasing their dividends per share, and have indeed become consistently profitable.</p>
+<p>As part of this process under the current management plan, they identified five of their lines of business as “social innovation businesses” including IT, Energy, Industry, Mobility, and Smart Life.</p>
+<p>The company’s annual reporting period ends on March 31 of each year. If we look at the latest full year figures (from March 31, 2020), we can see a breakdown of their revenue and operating income, with the social innovation businesses highlighted in red:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-segments.png" alt="Hitachi Segments" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-segments.png 526w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-segments-171x300.png 171w" sizes="(max-width: 526px) 100vw, 526px" width="526" height="924"></p>
+<p><em>Chart Source: Hitachi Integrated Report 2020</em></p>
+<p>About half of their revenue comes from Japan, and the other half comes from a combination of North America, Europe, Asia, and elsewhere.</p>
+<p>Since that fiscal year in the charts above, Hitachi divested their chemical business, and announced plans to divest their metals and construction businesses.</p>
+<p>On the other side of the coin, they acquired the majority of ABB’s power grid business, which will enhance Hitachi’s small energy segment. This business was carved out of Switzerland’s ABB, and became a joint venture called Hitachi ABB Power Grids Ltd, of which Hitachi owns 80% and ABB owns 20%. In time, Hitachi will probably fully absorb it but they already effectively own it now.</p>
+<p>A key thing that all of the red social innovation businesses in the charts above have in common is that they incorporate Lumada, Hitachi’s platform of digital solutions. This helps focus and standardize the various business segments towards complete solutions with a lot of technical overlap, rather than being a pile of separate businesses within a shared corporate umbrella.</p>
+<p><strong>The Focus on Lumada</strong></p>
+<p>Here’s how the company defines Lumada:</p>
+<blockquote>
+<p>Lumada consists of a core of platform services, architecture and technologies that enable the quick development and implementation of advanced digital solutions.</p>
+<p>Lumada is comprised of six main layers form the architecture of the Lumada IoT platform: Edge, Core, Data Management, Analytics, Studio, and Foundry. Together they serve as a software platform that is intelligent, composable, secure, and flexible.</p>
+</blockquote>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-lumada.png" alt="Hitachi Lumada" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-lumada.png 700w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-lumada-300x166.png 300w" sizes="(max-width: 700px) 100vw, 700px" width="700" height="387"></p>
+<p><em>Chart Source: Hitachi.com</em></p>
+<p>Hitach is now very focused on internet of things “IoT” technologies, along with the analytics, data management, and enterprise-wide integration between IT systems and operational field assets.</p>
+<p>In other words, rather than being involved in various unrelated low-margin businesses, they are doubling down on being a system-wide integrator for major companies and projects, relating to information technology, industrial automation, smart grids, infrastructure, and home products.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-lumada-2.png" alt="Hitachi Lumada 2" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-lumada-2.png 633w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-lumada-2-279x300.png 279w" sizes="(max-width: 633px) 100vw, 633px" width="633" height="681"></p>
+<p><em>Chart Source: Hitachi.com</em></p>
+<p>One thing that all of these areas have in common, ranging from industrial automation to enterprise IT to their newly-acquired power grids business, is the need for a ton of sensors and control systems within these assets (IoT), along with big data technology to tie it all together to make sense of it and help company leaders effectively manage their assets towards their business goals.</p>
+<p><strong>Global Electrification</strong></p>
+<p>A lot of people are excited about electric vehicles and renewable energy, going so far as to pay extraordinarily high valuations for companies in those industries. By most ways of measuring it, those areas became bubbles in 2021. For example, Tesla revenues grew by 30% in 2020 while their stock price soared over 700%.</p>
+<p>Hitachi, however, represents a cheap way to play that trend towards electrification of the world. It’s the equivalent of selling picks and shovels to prospectors in a gold rush, as the popular analogy goes.</p>
+<p>In order for the world to shift more towards electric vehicles over time, electrical grids need to be vastly improved and overhauled.</p>
+<p>The electrical grid represents a big chunk of our energy consumption. Heating and cooking energy often comes from natural gas, but can also come from electricity. Our cars, however, run on gasoline, which involves a lot of energy transported by pipeline, rail, truck, etc.</p>
+<p>The shift towards electrification will see this automotive energy gradually shift over to the electrical grid. In addition, solar panels and other factors make the grid more complex. The existing electrical grid in most places is not robust enough or smart enough to handle these changes, and needs a lot of infrastructure spending to modernize.</p>
+<p>One of Hitachi’s core areas of expertise is electrification, which is one of the areas they are emphasizing across their business lines to ensure they are part of this mega-trend. Hitachi is involved in robotics, power grids, electric vehicle car parts, data centers, sensors and IoT technologies, and digital platforms to tie them together.</p>
+<p><strong>Valuation Analysis</strong></p>
+<p>Hitachi’s F.A.S.T. Graph shows the remarkable turnaround in profitability since the company shifted its focus in 2010:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-fastgraph.png" alt="FAST Graph" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-fastgraph.png 970w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-fastgraph-300x179.png 300w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-fastgraph-768x459.png 768w" sizes="(max-width: 970px) 100vw, 970px" width="970" height="580"></p>
+<p>That chart is in dollar terms for the HTHIY OTC version of the stock, so the yen devaluation during the 2012-2015 period affected the starting period.</p>
+<p>Currently, the company is trading for less than 15x consensus analyst earnings, and less than 10x consensus forward earnings if we look 2-3 years out. The company is trading at about 1.6x book value, and has an “A” credit rating from S&amp;P. Their balance sheet is in good shape.</p>
+<p>In terms of dividends, Hitachi shifted from a stagnant dividend policy pre-2011, to a persistent dividend growth policy since then. Their dividends depend on business conditions and can be flat or go up as appropriate, but overall, we see a clear trend, with a 10-11% annualized dividend growth rate since the company’s turnaround efforts began:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-dividends.png" alt="Hitachi Dividends" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-dividends.png 637w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-dividends-300x227.png 300w" sizes="(max-width: 637px) 100vw, 637px" width="637" height="483"></p>
+<p><em>Data Source: Hitachi.com</em></p>
+<p>Hitachi’s dividend yield is on the low side, at about 2%. With substantial growth potential, however, this makes for an attractive total return play. After the company wraps up its divestitures, hopefully in 2021 or 2022, I suspect the dividend will continue growing.</p>
+<p>After those divestitures, the company will be relatively “complete” and ready to move forward as a Lumada-focused and more streamlined tech/industrial company involved with several long-term trends of power grid and infrastructure enhancement, robotics, electrification, data management, and IoT.</p>
+<p>Notably, the stock in yen terms just broke out of a 15-year price consolidation, that previously had what was basically a quadruple-top:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-quadruple-top.png" alt="Hitachi Breakout" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-quadruple-top.png 688w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-hitachi-quadruple-top-300x163.png 300w" sizes="(max-width: 688px) 100vw, 688px" width="688" height="374"></p>
+<p>Like many Japanese stocks, Hitachi was caught up in the Japanese bubble all those decades ago, so it has been dead money. However, the company now looks very different than it did over this period, due to its series of divestures, acquisitions, and restructurings. The fact that it’s breaking out is getting interesting.</p>
+<p>I have no idea what the stock will do over any multi-month period but for a 5+ year perspective, I think Hitachi is a good buy-and-hold candidate, along with the various Japanese trading companies that I’ve been pounding the table on in recent months.</p>
+<p><strong>Company Risks</strong></p>
+<p>Although Hitachi is a relatively conservative investment at this point, it does have notable risks.</p>
+<p><em>Economic Cyclicality</em></p>
+<p>Although Hitachi was successful in turning around its business over the past decade, it has seen slow progress in terms of profit growth because the macro headwinds were against them.</p>
+<p>The 2010s decade was disinflationary in a global sense, with a strengthening dollar that kept a lid on global growth and liquidity, along with a period of deleveraging in Japan. In other words, it wasn’t a pro-commodity, pro-industry type of decade at all, and instead was more of a software decade, with industrial/commodity stagnation.</p>
+<p>I think the 2020s are shaping up to be the opposite, with more of a weaker dollar, pro-commodity, pro-industry style. Many countries will likely turn to publicly-funded infrastructure projects to fuel growth and modernize aging infrastructure, and a weaker dollar could ignite the next leg up in emerging market earnings and activity.</p>
+<p>In other words, I expect tailwinds for Hitachi now, which combined with their new corporation direction, should make this decade a lot different than the past few decades for the company.</p>
+<p>However, if this doesn’t come to pass, Hitachi could indeed have another slow decade, as it grinds along with good management but against macro headwinds.</p>
+<p><em>Global Competition</em></p>
+<p>Hitachi operates in a number of highly competitive industries. They serve markets all over the world which means they have competition from American, European, Chinese, Taiwanese, and South Korean firms in many areas.</p>
+<p>I would classify them as having a moderate moat, meaning they have a lot of entrenched advantages, but can’t just sit back and ride cash-cow businesses. They have to constantly innovate and be well-managed in order to succeed, so if the current or next generation of managers fail to perform well, Hitachi could lag its peers and stagnate.</p>
+<h2>Summary: All About the Curve</h2>
+<p>Besides the dollar and some of these other assets, a key thing I’m watching here is the long end of the Treasury curve. Here’s the 10-year minus 3-month yield curve, with past recessions in gray:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-yield-curve.png" alt="Yield Curve" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-yield-curve.png 728w, https://www.lynalden.com/wp-content/uploads/premium-2021-2-14-yield-curve-300x185.png 300w" sizes="(max-width: 728px) 100vw, 728px" width="728" height="450"></p>
+<p><em>Chart Source: St. Louis Fed</em></p>
+<p>The 10-year yield has been rising, and just broke out over 1.20%, which makes it the highest 10-year yield since the pandemic hit in early 2020.</p>
+<p>All else being equal, a steepening yield curve is a sign of reflation, tends to be good for bank stocks and value stocks more broadly, and tends to be somewhat painful for very expensive growth stocks, as described in <a href="https://www.lynalden.com/interest-rate-effects/" target="_blank" rel="noopener">my article</a> on interest rate effects on equities.</p>
+<p>_____</p>
+<p>All of the analysis in this research report is presented for informational purposes about investments in general and does not constitute investment advice.</p>
+<p>Individuals have unique circumstances, goals, and risk tolerances, so you should consult a certified investment professional and/or do you own due diligence before making investment decisions. Certified professionals can provide individualized investment advice tailored to your unique situation. This research report is for general investment information only, is not individualized, and as such does not constitute investment advice.</p>
+<p>Every effort is made to ensure that the research content in this report is accurate, but accuracy cannot be guaranteed and all information is presented “as is”. Investors should consult multiple sources of information when analyzing investments.</p>
+<p>Investments may lose value. Investors should use proper diversification and maintain appropriate position sizes when managing their investments.</p>
+<p>_____</p>
+<p>Thanks for reading. You can go back to the&nbsp;<a href="https://www.lynalden.com/members/">members area</a>&nbsp;to look at the stock list, portfolios, or other articles.</p>
+<p>Best regards,</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/Lyn-Alden-Signature.png" alt="Lyn Alden Signature" width="204" height="126"></p>
+</div></article></main></div></div>
+  <span></span> <!-- for IntersectionObserver -->
+  
+  
+  
+  
+
+
+</body><style>body {
+      font-size:  18px;
+      font-family: Georgia, "Times New Roman", serif;
+      width: 850px;
+    }
+    .page {
+      line-height: 27.0px;
+    }
+    h1, h2, h3 {
+      line-height: initial;
+    }</style></html>
