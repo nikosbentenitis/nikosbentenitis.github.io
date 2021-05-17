@@ -1,0 +1,268 @@
+<html><head><title>Market Update :: Reader View</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+html {
+  overflow: overlay;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+}
+body[data-mode="light"] {
+  color:  #222;
+  background-color:  whitesmoke;
+}
+body[data-mode="dark"] {
+  color:  #eee;
+  background-color:  #333;
+}
+body[data-mode="sepia"] {
+  color:  #5b4636;
+  background-color:  #f4ecd8;
+}
+body[data-mode="solarized-light"] {
+  color:  #586e75;
+  background-color:  #fdf6e3;
+}
+body[data-mode="nord-light"] {
+  color:  #2e3440;
+  background-color:  #e5e9f0;
+}
+body[data-mode="groove-dark"] {
+  color:  #cec4ac;
+  background-color:  #282828;
+}
+body[data-mode="solarized-dark"] {
+  color:  #93a1a1;
+  background-color:  #002b36;
+}
+body[data-mode="nord-dark"] {
+  color:  #e5e9f0;
+  background-color:  #2e3440;
+}
+@media print {
+  body[data-mode="light"],
+  body[data-mode="dark"],
+  body[data-mode="sepia"],
+  body[data-mode="solarized-light"],
+  body[data-mode="nord-light"],
+  body[data-mode="groove-dark"],
+  body[data-mode="solarized-dark"],
+  body[data-mode="nord-dark"] {
+    color: #000;
+    background-color: #fff;
+  }
+}
+body[data-loaded=true] {
+  
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+img:not([width])[src$=".svg"] {
+  max-width: 100px;
+}
+body[data-images=false] canvas,
+body[data-images=false] svg,
+body[data-images=false] img {
+  display: none;
+}
+a {
+  color: #0095dd;
+  text-decoration: none;
+}
+#reader-domain {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border-bottom-color: currentcolor;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: inline-block;
+  direction: ltr;
+}
+#reader-domain > span:first-child {
+  font-size: 1.1em;
+}
+#reader-domain > span:last-child {
+  font-size: 0.8em;
+}
+#reader-title {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+}
+#reader-credits,
+#doi,
+#published-time,
+#reader-estimated-time {
+  font-size: 0.85em;
+  line-height: 1.48em;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+#reader-credits:not(:empty)::after {
+  content: ' ⋮ ';
+}
+#published-time:not(:empty)::before {
+  content: ' ⋮ ';
+}
+#doi-json {
+  overflow: hidden;
+}
+#doi-json code {
+  overflow: auto;
+  max-height: 400px;
+}
+#published-time:empty,
+#reader-credits:empty {
+  display: none;
+}
+body[data-speech="true"] .tts-box {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 32px;
+  z-index: 1;
+  pointer-events: none;
+  box-shadow: 0 0 0 1000vw rgba(128, 128, 128, 0.2);
+}
+body[data-speech="true"] .tts-word {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  background-color: red;
+  height: 2px;
+}
+.tts-word.hidden,
+.tts-box.hidden {
+  display: none;
+}
+body[data-speech="false"] .tts-speaking::after {
+  display: none;
+}
+mark.hghlght {
+  background-color: #ffff81;
+}
+.hidden {
+  display: none;
+}
+</style>
+  <style id="user-css">body {
+  padding-bottom: 64px;
+}
+a:visited {
+  color: #d33bf0;
+}
+a:link, a:link:hover, a:link:active {
+  color: #0095dd;
+}
+a:link {
+  text-decoration: none;
+  font-weight: normal;
+}
+pre {
+  white-space: pre-wrap;
+}
+pre code {
+  background-color: #eff0f1;
+  color: #393318;
+  font-family: monospace;
+  display: block;
+  padding: 5px 10px;
+}
+body[data-mode="dark"] pre code {
+  background-color: #585858;
+  color: #e8e8e8;
+}
+
+/* CSS for sans-serif fonts */
+body[data-font=sans-serif] {}
+/* CSS for serif fonts */
+body[data-font=serif] {}
+
+/* CSS for "sepia" theme */
+body[data-mode=sepia] {
+}
+/* CSS for "light" theme */
+body[data-mode=light] {}
+/* CSS for "dark" theme */
+body[data-mode=dark] {}</style>
+</head>
+<body data-images="true" data-mode="light" data-font="serif" data-loaded="true">
+  <span></span> <!-- for IntersectionObserver -->
+  <a id="reader-domain" href="https://www.lynalden.com/premium-2021-5-16/">
+    <span>www.lynalden.com</span>
+    <span>/premium-2021-5-16/</span>
+  </a>
+  <h1 dir="auto" id="reader-title">Market Update</h1>
+  <span dir="auto" id="reader-credits"></span>
+  <span dir="auto" id="reader-estimated-time">7-8 minutes</span>
+  <span dir="auto" id="published-time"></span>
+  <hr>
+  <div id="readability-page-1" class="page"><div><main><article class="page" aria-label="Market Update" itemscope="" itemtype="https://schema.org/CreativeWork"><div itemprop="text"><p><em>May 16, 2021</em></p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-feature.jpg" sizes="(max-width: 700px) 100vw, 700px" srcset="https://www.lynalden.com/wp-content/uploads/premium-feature.jpg 700w, https://www.lynalden.com/wp-content/uploads/premium-feature-300x129.jpg 300w" alt="Premium Feature Image" width="700" height="300"></p>
+<p>This is a brief extra note between normal reports to let subscribers know that I’ve just published the <a href="https://www.lynalden.com/may-2021-newsletter/" target="_blank" rel="noopener">May issue of my public newsletter</a>. The public newsletter comes out every six weeks or so, and covers big picture trends. I wanted to make sure premium subscribers don’t miss it.</p>
+<p>That newsletter issue expands on my recent <a href="https://www.lynalden.com/inflation/" target="_blank" rel="noopener">article on inflation</a>, connects it to last year’s <a href="https://www.lynalden.com/fiscal-and-monetary-policy/" target="_blank" rel="noopener">article on the long-term debt cycle</a>, and applies it to current market conditions.</p>
+<p>The next premium report comes out next week as normally-scheduled.</p>
+<h2>Volatility Note</h2>
+<p>I also want to make sure subscribers are aware of some recent market turns. Some commodity prices got ahead of themselves and are now experiencing risk-off moves.</p>
+<p>Lumber, for example, has been undergoing a significant correction in the past few days after a parabolic spike:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-lumber.png" alt="Lumber Chart" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-lumber.png 627w, https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-lumber-300x227.png 300w" sizes="(max-width: 627px) 100vw, 627px" width="627" height="475"></p>
+<p>A similar outcome is occurring in iron ore (the key input for steel):</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-iron-ore.png" alt="Iron Ore" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-iron-ore.png 746w, https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-iron-ore-300x188.png 300w" sizes="(max-width: 746px) 100vw, 746px" width="746" height="468"></p>
+<p>I have a long-term constructive view about commodities and the overall inflation narrative in the 2020s decade, but there will be periods of time where some of them get overstretched and the market leans in too much, and experiences a pullback. Lumber in particular got to crazy levels (and has too big of a spread vs timber).</p>
+<p>We’ve been doing some rotations in the portfolios over the past several months for risk management purposes. Nucor Steel (NUE) for example was one that I originally bought on March 19, 2020 at about $30 for the newsletter portfolio, and sold it on April 6, 2021 for about $80. Freeport-McMoRan (FCX) was another one, which we added in July 2020 and sold in March 2021. Both of those had 150% gains during the relatively brief holding periods, but still continued to go up in a parabolic way after the sale as well.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-5-nue-fcx-chart.png" alt="FCX and NUE Chart" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-5-nue-fcx-chart.png 654w, https://www.lynalden.com/wp-content/uploads/premium-2021-5-nue-fcx-chart-239x300.png 239w" sizes="(max-width: 654px) 100vw, 654px" width="654" height="822"></p>
+<p>I’d ideally like to see a consolidation or correction in some of these types of stocks, within the bigger picture of a constructive 2020s decade for them. I remain long commodity producer ETFs like GUNR that have some of these types of names.</p>
+<p>In late March, I once again became more favorable towards gold miners, and have been quite bullish on energy stocks (low-cost producers and high-quality pipeline companies) and remain so, since they haven’t had the big parabolic move that some of these other commodity producers have.</p>
+<p>Here’s the F.A.S.T. Graph for Enterprise Products Partners (EPD) for example:</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-epd-fastgraph.png" alt="EPD FASTGraph" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-epd-fastgraph.png 961w, https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-epd-fastgraph-300x182.png 300w, https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-epd-fastgraph-768x465.png 768w" sizes="(max-width: 961px) 100vw, 961px" width="961" height="582"></p>
+<p>And here’s the weekly technical chart for the gold miner ETF (GDX):</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-gdx.png" alt="GDX Chart" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-gdx.png 620w, https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-gdx-300x234.png 300w" sizes="(max-width: 620px) 100vw, 620px" width="620" height="484"></p>
+<p>Bitcoin has run into recent turbulence. I originally recommended it in the <a href="https://www.lynalden.com/premium-2020-4-12/" target="_blank" rel="noopener">April 12, 2020 report</a> at a little under $7,000 and bought it myself eight days later on April 20th. I then recommended GBTC in my <a href="https://www.lynalden.com/premium-2020-6-7/" target="_blank" rel="noopener">June 7, 2020 report</a> at about $11/share. I grew my conviction level of bitcoin from there into the summer of 2020, including my longform <a href="https://www.lynalden.com/invest-in-bitcoin/" target="_blank" rel="noopener">July 16, 2020 public article</a> when it was a bit over $9,000. I continued tracking its price action in the research service through multiple reports.</p>
+<p>Lately its price structure has become rather unclear, as bitcoin made a new high, but then started making lower highs and lower lows.</p>
+<p>Today, bitcoin has run into another round of price turbulence as Elon Musk has backpedaled on his endorsement of bitcoin, and has gotten into various twitter debates with well-known personalities in the bitcoin community. Musk has expressed views that show a lack of understanding and historical context for block size debates, trade-offs with various technical aspects of the protocol, etc. However, he has a huge platform and is capable of moving the price significantly.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-btc-price.png" alt="Bitcoin Price" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-btc-price.png 689w, https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-btc-price-250x300.png 250w" sizes="(max-width: 689px) 100vw, 689px" width="689" height="826"></p>
+<p>The price action doesn’t look great here, although the bounce from daily lows looks reasonably solid.</p>
+<p>If we look back at bitcoin’s relatively short price history, we can divide it into approximately 4-year cycles that occurred after the launch and after each pre-programmed supply flow halving. The closest period to what’s happening now, according to price and a number of other metrics, is the mid-cycle correction/consolidation that bitcoin experienced in 2013 for six months.</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-rhodl-ratio.png" alt="RHODL Ratio" srcset="https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-rhodl-ratio.png 681w, https://www.lynalden.com/wp-content/uploads/premium-2021-5-16-rhodl-ratio-292x300.png 292w" sizes="(max-width: 681px) 100vw, 681px" width="681" height="700"></p>
+<p><em>Chart Source: <a href="https://www.lookintobitcoin.com/charts/rhodl-ratio/" target="_blank" rel="noopener">LookIntoBitcoin.com</a>, Annotated by Lyn Alden</em></p>
+<p>While I remain strategically bullish long-term on bitcoin as a base case, the intermediate-term tactical outlook is unclear. After large gains over the past year, it’s not as asymmetric of a position as when I originally recommended it.</p>
+<p>I think the mid-cycle consolidation is the highest-probability outcome (meaning higher highs in 2021 after this multi-month consolidation ends), but there’s also a decent chance that it experiences a longer correction as well, since the broad crypto/altcoin space is very frothy in general at this time, deserves a sentiment reset, and has lately been correcting downward.</p>
+<p>There are some catalysts that could propel another leg higher for bitcoin, such as inflation running hot and the Fed deciding not to turn hawkish, for example. But overall, with some commodities looking a bit “risk off” at the moment, along with a funny civil war going on between bitcoin proponents, various altcoin groups, Elon Musk, and others, there is plenty of risk in the space at the moment. I would neither be surprised to see bitcoin go sub-$40k or to new all-time highs by June, since the overall price structure no longer has a clear direction at this time from an intermediate-term perspective. I still like the coin.</p>
+<p>Overall, it’s a good time for investors to check their portfolio allocations across a broad set of asset classes to ensure their risk tolerance is appropriate for their individual situation and goals. I don’t currently plan to change any of the portfolios; we’ve had some rotations in recent months as previously mentioned, and I think they are well-positioned for this environment. However, I’ll continue to monitor general macro conditions as we move forward.</p>
+<p>_____</p>
+<p>All of the analysis in this research report is presented for informational purposes about investments in general and does not constitute investment advice.</p>
+<p>Individuals have unique circumstances, goals, and risk tolerances, so you should consult a certified investment professional and/or do you own due diligence before making investment decisions. Certified professionals can provide individualized investment advice tailored to your unique situation. This research report is for general investment information only, is not individualized, and as such does not constitute investment advice.</p>
+<p>Every effort is made to ensure that the research content in this report is accurate, but accuracy cannot be guaranteed and all information is presented “as is”. Investors should consult multiple sources of information when analyzing investments.</p>
+<p>Investments may lose value. Investors should use proper diversification and maintain appropriate position sizes when managing their investments.</p>
+<p>_____</p>
+<p>Thanks for reading. You can go back to the&nbsp;<a href="https://www.lynalden.com/members/">members area</a>&nbsp;to look at the stock list, portfolios, or other articles.</p>
+<p>Best regards,</p>
+<p><img loading="lazy" src="https://www.lynalden.com/wp-content/uploads/Lyn-Alden-Signature.png" alt="Lyn Alden Signature" width="204" height="126"></p>
+</div></article></main></div></div>
+  <span></span> <!-- for IntersectionObserver -->
+  
+  
+  
+  
+
+
+</body><style>body {
+      font-size:  18px;
+      font-family: Georgia, "Times New Roman", serif;
+      width: 850px;
+    }
+    .page {
+      line-height: 27.0px;
+    }
+    h1, h2, h3 {
+      line-height: initial;
+    }</style></html>
