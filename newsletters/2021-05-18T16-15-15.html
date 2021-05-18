@@ -1,0 +1,803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"><head><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta name="x-apple-disable-message-reformatting"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black" name="apple-mobile-web-app-status-bar-style"/><meta content="telephone=no" name="format-detection"/><title></title><link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet" type="text/css"/><style type="text/css">
+/* Resets */
+.ReadMsgBody { width: 100%; background-color: #ebebeb;}
+.ExternalClass {width: 100%; background-color: #ebebeb;}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+a[x-apple-data-detectors]{
+color:inherit !important;
+text-decoration:none !important;
+font-size:inherit !important;
+font-family:inherit !important;
+font-weight:inherit !important;
+line-height:inherit !important;
+}
+body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+body {margin:0; padding:0;}
+.yshortcuts a {border-bottom: none !important;}
+.rnb-del-min-width{ min-width: 0 !important; }
+/* Add new outlook css start */
+.templateContainer{
+max-width:590px !important;
+width:auto !important;
+}
+/* Add new outlook css end */
+/* Image width by default for 3 columns */
+img[class="rnb-col-3-img"] {
+max-width:170px;
+}
+/* Image width by default for 2 columns */
+img[class="rnb-col-2-img"] {
+max-width:264px;
+}
+/* Image width by default for 2 columns aside small size */
+img[class="rnb-col-2-img-side-xs"] {
+max-width:180px;
+}
+/* Image width by default for 2 columns aside big size */
+img[class="rnb-col-2-img-side-xl"] {
+max-width:350px;
+}
+/* Image width by default for 1 column */
+img[class="rnb-col-1-img"] {
+max-width:550px;
+}
+/* Image width by default for header */
+img[class="rnb-header-img"] {
+max-width:590px;
+}
+/* Ckeditor line-height spacing */
+.rnb-force-col p, ul, ol{margin:0px!important;}
+.rnb-del-min-width p, ul, ol{margin:0px!important;}
+/* tmpl-2 preview */
+.rnb-tmpl-width{ width:100%!important;}
+/* tmpl-11 preview */
+.rnb-social-width{padding-right:15px!important;}
+/* tmpl-11 preview */
+.rnb-social-align{float:right!important;}
+/* Ul Li outlook extra spacing fix */
+li{mso-margin-top-alt: 0; mso-margin-bottom-alt: 0;}
+/* Outlook fix */
+table {mso-table-lspace:0pt; mso-table-rspace:0pt;}
+/* Outlook fix */
+table, tr, td {border-collapse: collapse;}
+/* Outlook fix */
+p,a,li,blockquote {mso-line-height-rule:exactly;}
+/* Outlook fix */
+.msib-right-img { mso-padding-alt: 0 !important;}
+@media only screen and (min-width:590px){
+/* mac fix width */
+.templateContainer{width:590px !important;}
+}
+@media screen and (max-width: 360px){
+/* yahoo app fix width "tmpl-2 tmpl-10 tmpl-13" in android devices */
+.rnb-yahoo-width{ width:360px !important;}
+}
+@media screen and (max-width: 380px){
+/* fix width and font size "tmpl-4 tmpl-6" in mobile preview */
+.element-img-text{ font-size:24px !important;}
+.element-img-text2{ width:230px !important;}
+.content-img-text-tmpl-6{ font-size:24px !important;}
+.content-img-text2-tmpl-6{ width:220px !important;}
+}
+
+@media screen and (max-width: 480px) {
+td[class="rnb-container-padding"] {
+padding-left: 10px !important;
+padding-right: 10px !important;
+}
+/* force container nav to (horizontal) blocks */
+td.rnb-force-nav {
+display: inherit;
+}
+/* fix text alignment "tmpl-11" in mobile preview */
+.rnb-social-text-left {
+width: 100%;
+text-align: center;
+margin-bottom: 15px;
+}
+.rnb-social-text-right {
+width: 100%;
+text-align: center;
+}
+}
+@media only screen and (max-width: 600px) {
+/* center the address & social icons */
+.rnb-text-center {text-align:center !important;}
+/* force container columns to (horizontal) blocks */
+th.rnb-force-col {
+display: block;
+padding-right: 0 !important;
+padding-left: 0 !important;
+width:100%;
+}
+table.rnb-container {
+width: 100% !important;
+}
+table.rnb-btn-col-content {
+width: 100% !important;
+}
+table.rnb-col-3 {
+/* unset table align="left/right" */
+float: none !important;
+width: 100% !important;
+/* change left/right padding and margins to top/bottom ones */
+margin-bottom: 10px;
+padding-bottom: 10px;
+/*border-bottom: 1px solid #eee;*/
+}
+table.rnb-last-col-3 {
+/* unset table align="left/right" */
+float: none !important;
+width: 100% !important;
+}
+table.rnb-col-2 {
+/* unset table align="left/right" */
+float: none !important;
+width: 100% !important;
+/* change left/right padding and margins to top/bottom ones */
+margin-bottom: 10px;
+padding-bottom: 10px;
+/*border-bottom: 1px solid #eee;*/
+}
+table.rnb-col-2-noborder-onright {
+/* unset table align="left/right" */
+float: none !important;
+width: 100% !important;
+/* change left/right padding and margins to top/bottom ones */
+margin-bottom: 10px;
+padding-bottom: 10px;
+}
+table.rnb-col-2-noborder-onleft {
+/* unset table align="left/right" */
+float: none !important;
+width: 100% !important;
+/* change left/right padding and margins to top/bottom ones */
+margin-top: 10px;
+padding-top: 10px;
+}
+table.rnb-last-col-2 {
+/* unset table align="left/right" */
+float: none !important;
+width: 100% !important;
+}
+table.rnb-col-1 {
+/* unset table align="left/right" */
+float: none !important;
+width: 100% !important;
+}
+img.rnb-col-3-img {
+/**max-width:none !important;**/
+width:100% !important;
+}
+img.rnb-col-2-img {
+/**max-width:none !important;**/
+width:100% !important;
+}
+img.rnb-col-2-img-side-xs {
+/**max-width:none !important;**/
+width:100% !important;
+}
+img.rnb-col-2-img-side-xl {
+/**max-width:none !important;**/
+width:100% !important;
+}
+img.rnb-col-1-img {
+/**max-width:none !important;**/
+width:100% !important;
+}
+img.rnb-header-img {
+/**max-width:none !important;**/
+width:100% !important;
+margin:0 auto;
+}
+img.rnb-logo-img {
+/**max-width:none !important;**/
+width:100% !important;
+}
+td.rnb-mbl-float-none {
+float:inherit !important;
+}
+.img-block-center{text-align:center !important;}
+.logo-img-center
+{
+float:inherit !important;
+}
+/* tmpl-11 preview */
+.rnb-social-align{margin:0 auto !important; float:inherit !important;}
+/* tmpl-11 preview */
+.rnb-social-center{display:inline-block;}
+/* tmpl-11 preview */
+.social-text-spacing{margin-bottom:0px !important; padding-bottom:0px !important;}
+/* tmpl-11 preview */
+.social-text-spacing2{padding-top:15px !important;}
+/* UL bullet fixed in outlook */
+ul {mso-special-format:bullet;}
+}@media screen{body{font-family:'Rajdhani','Arial',Helvetica,sans-serif;}}</style><!--[if gte mso 11]><style type="text/css">table{border-spacing: 0; }table td {border-collapse: separate;}</style><![endif]--><!--[if !mso]><!--><style type="text/css">table{border-spacing: 0;} table td {border-collapse: collapse;}</style> <!--<![endif]--><!--[if gte mso 15]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--></head><body> <table border="0" cellpadding="0" cellspacing="0" style=" mso-hide: all; display: none;"><tbody><tr><td>I'm excited to talk to you about the vaccines that are playing a part in helping us develop immunity to the disease.</td></tr></tbody></table>  
+
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="main-template" style="background-color: rgb(255, 255, 255);" width="100%">
+
+    <tbody><tr>
+        <td align="center" valign="top">
+        <!--[if gte mso 9]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="590" style="width:590px;">
+                        <tr>
+                        <td align="center" valign="top" width="590" style="width:590px;">
+                        <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" class="templateContainer" style="max-width:590px!important; width: 590px;" width="590">
+        <tbody><tr>
+
+        <td align="center" valign="top">
+
+            <div style="background-color: rgb(255, 255, 255); border-radius: 0px;">
+                
+                <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                <tr>
+                <![endif]-->
+                
+                <!--[if mso]>
+                <td valign="top" width="590" style="width:590px;">
+                <![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" class="rnb-del-min-width" id="Layout_8" name="Layout_8" style="min-width:100%;" width="100%">
+                <tbody><tr>
+                    <td align="center" class="rnb-del-min-width" valign="top">
+                        <a href="#" name="Layout_8"></a>
+                        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="rnb-container" style="max-width: 100%; min-width: 100%; table-layout: fixed; background-color: rgb(255, 255, 255); border-radius: 0px; border-collapse: separate; padding-left: 20px; padding-right: 20px;" width="100%">
+                            <tbody><tr>
+                                <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                            </tr>
+                            <tr>
+                                <td align="left" class="rnb-container-padding" valign="top">
+
+                                    <table border="0" cellpadding="0" cellspacing="0" class="rnb-columns-container" width="100%">
+                                        <tbody><tr>
+                                            <th class="rnb-force-col" style="text-align: left; font-weight: normal; padding-right: 0px;" valign="top" width="550">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="rnb-col-1" valign="top" width="550">
+                                                    <tbody><tr>
+                                                        <td align="left" class="img-block-center" valign="top" width="100%">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" class="img-block-center" valign="top" width="100%">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" style="display:inline-block;">
+                                                                            <tbody><tr>
+                                                                                <td>
+                                                                                    <div style="border-top:0px None #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0px None #000;display:inline-block;"><div><img alt="" border="0" class="rnb-col-1-img" hspace="0" style="vertical-align: top; max-width: 584px; float: left;" vspace="0" width="550"/></div><div style="clear:both;"></div>
+                                                                                    </div>
+                                                                            </td>
+                                                                            </tr>
+                                                                        </tbody></table>
+
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table></td>
+                                                    </tr><tr>
+                                                        <td class="col_td_gap" height="10" style="font-size:1px; line-height:10px; mso-hide: all;"> </td>
+                                                    </tr><tr>
+                                                        <td style="font-size:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#3c4858;">
+                                                            <div><div><span style="background-color: transparent;">COVID-19 has changed our world. Now, as we consider the broad landscape of factors that are converging to deliver the promise of a bright future – where the global community can breathe a sigh of relief and begin to return to something closer to "business as normal" – it's hard to overlook the tremendous impact that mRNA vaccines have had. For that reason, today's email about vaccines focuses on this unique technology.</span></div>
+
+<div> </div>
+
+<div>First, let's take in some really big news from the CDC last week:</div>
+
+<div> </div>
+
+<div><strong><a href="https://r.sib.foundmyfitness.com/mk/cl/f/-k0qw7jUQQhqAeuOcPGRcMWMn3bzfAGbtjvuyqsO4TEqNZPbCcfT4dn5PL5sebfsiabVbKizkTAOxQzJ3b7pSdQcTRqDzf06ifj_K7dSSsvS3dl9oJLBE-cyDKj3nLWLIlFkqmUjoNawsLmjgiWa0YMYSLeW41lrNogyNC4b0Ik-_e1hp50xdY_p7ka5VstHi3ucNxWueTzzYQj8h4fPKDmTp0UZINsJNV-73JrdgpSk0EWzQCNSTPUKTwK7do8QbblV" sib_link_id="0" style="text-decoration: underline; color: rgb(0, 146, 255);">If you are fully vaccinated, you can resume (most) activities that you did prior to the pandemic.</a></strong></div>
+
+<div> </div>
+
+<div>CDC based these recommendations on the robust science showing that…</div>
+
+<div> </div>
+
+<ol>
+	<li>The vaccines are <strong>highly effective at preventing infection</strong> from the virus – proven first in (huge) clinical trials and now in the <strong>real</strong> world.</li>
+	<li>The vaccines are <strong>effective against variants</strong> spreading in the US, based on findings published <a href="https://r.sib.foundmyfitness.com/mk/cl/f/D2CZSqEOVPKYHtk6c0M1k3I9iubfk4PGZX7SsJ1-ZToVpSnK0qcFB6DRKXmT-ZAdPj5a2xQuJR_3V-Mu9-VsFgXOvXluzCin4wgqoEmBdi68CJBmpgXD1pxnXsKif_aMMWQ2x6QGcPceLccR42UlDBnVBiGZ9_kkPr1jTQdflij7MgCJsgamGKdQ463uts7uZl1FxJmsIEU3iv7I7NF--uDu2Dah9N1IYAeryf1_rvEoyFxWtJMTu4uSbg09TjoORystowG9M3--Kr7kP3215oKfGpo" sib_link_id="1" style="text-decoration: underline; color: rgb(0, 146, 255);">here</a> and <a href="https://r.sib.foundmyfitness.com/mk/cl/f/Q-pWrnIut3uXKM5vjV3EHgLhwHNHCLIIBl5zxTc796G_xfouEj5FotaXjmn1fYvXB8koMMeo6IDcG7gugpNyvgIepfKiyWx8kdW8TFZP12Rp0avHdCZkkYywSzxLYuEo3hFdGVhgHSB0GqqZbCo5f1liGEDPd34BXfeowzlf-TTUCbBWhvK-afSOQyC9ovQjIfSI5IvjiN4NZiKTEyaPJTDyWhjNGH3fc31-jGkpk3VjonW8iwXsR9YfyGZ7FNTl3S9mE1p9oniyA1vD1g" sib_link_id="2" style="text-decoration: underline; color: rgb(0, 146, 255);">here</a>.</li>
+	<li>The vaccines are <strong>effective at preventing transmission</strong> of the virus.</li>
+</ol>
+
+<div> </div>
+
+<div>So, let's talk about those vaccines.</div>
+
+<div> </div>
+
+<div>Last fall, less than a year after the novel coronavirus SARS-CoV-2 (the virus that causes COVID-19) first emerged, two new vaccines – from <a href="https://r.sib.foundmyfitness.com/mk/cl/f/znaO4hYEGWeiVrciQIZoRX4Rl23-KKk8PizL69XS0Oz7_6BMTTDHb-1VbX9N2ix48hgMHu4A7KJ2kAZV5YZTaDP7w5PLEGjXDVSNRNPcv_vUsXI1dK9PJ3z09mvuqSu5yT3H-V-xZiZPQoXpObkZOzFSXRE5eCe-SAzKBPjmJzda-KmssVVOrMAh2kSPc2cqQvCJNwwb9FKti40GPhCeRVNV2mvo1nkxWHwmWCPYRq-45SjsF4RVzDDKGi1fFaSBHfT92_mTdU5oYIFU-bq4L4hRzxnmMUFxQjpafaVyjzxcospDgke2FzQDh5EB8xo5d7Uf" sib_link_id="3" style="text-decoration: underline; color: rgb(0, 146, 255);">Pfizer</a> and <a href="https://r.sib.foundmyfitness.com/mk/cl/f/edYSsf0quSqeEEtUNkNkGBxTeoVncgg33tBqnlhwnP3XY7nKeDBypIR-iw2vbf-ldy-A0mPVEL5IY5tWUYn95W1_a5S47qO-CdZWQ__qxSyh5MwhXdTYIy9vLJKEBJj-CNJVISm_AtOgs6yAwlAEyGfzusqNbI4CIS3Bh__zurlrH2m5iz6i2P-Lty-TBA-f4JMX5BB6KcLVHDxpS3kYIuFbCsDLqdrMp5BafxPE9TeSG_Qnsc2KC48xanO14ZwrnPEj-wRBshHhWi-PKA7D0ox4esg6JuZzIq9fn7Yd0D55OWraTSLYS_Sh1w" sib_link_id="4" style="text-decoration: underline; color: rgb(0, 146, 255);">Moderna</a> – received emergency use authorization for distribution in the US. Both vaccines rely on a recent (and really exciting) innovation in vaccine technology: exploitation of messenger RNA, or mRNA. (A third vaccine, from Johnson &amp; Johnson, uses viral vector technology, but I really want to focus on the mRNA technology because 1) it's so cool, and 2) it opens the door to developing vaccines for many other diseases!)</div>
+
+<div><br/>
+Science is moving fast and the mRNA vaccine technology is now likely going to be used for the <a href="https://r.sib.foundmyfitness.com/mk/cl/f/dyDSItMytnXKA87y79UXVWAHgKMdQi36iTbgAmTsmU79lHuzl_TyXwr5EtGKor16eu6Ak-t7VNHROSJhkWXPviuCR8hdM-oObaMEWw2MnYHUQTGYFcrqbrCxw3Ao6l0Hgp6EG2-cHVpEuoHJfu8IZdScLc-50bXXnmDhSuyPv20DXwn-oZ25skw0QNiCbq1JykniZv9cfD0HQ6tbs2hGi4ni2Q5iuMeaaSit0EUxCHGv1T7Gi8LxUbgacRDmDpDxPGugCAQK86y6oiG8JwiMMmt7I9uONCyxrEqZgREwKm-NiRk2wz8BI3a0BWVzMeuROhcMtsaS3tbq_9YV63lSvvX_fts1SJKRYjK8gI1B4g6vRfjWkgOQNhAJ7Rd7gVnRxyCcvKDCghSJu9YAIYc4FiTj3Ev1wcEdDcox_799r6Z0V9O9D9ci6bKq7zzhwUYm3DS0VcabVGucrHwmhwLWiAJrMy0xu7n4aCRikPMv7-zn2QgNWS8qQwkHcMzgZfxP4-PeEEAKA1dMd5HWyGyk" sib_link_id="5" style="text-decoration: underline; color: rgb(0, 146, 255);">seasonal flu vaccines, malaria vaccines, and most exciting, cancer vaccines</a>!</div>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody></table>
+
+                                                </th></tr>
+                                    </tbody></table></td>
+                            </tr>
+                            <tr>
+                                <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                            </tr>
+                        </tbody></table>
+
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+                
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+                
+            </div></td>
+    </tr><tr>
+
+        <td align="center" valign="top">
+
+            <div style="background-color: rgb(255, 255, 255);">
+                
+                <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                <tr>
+                <![endif]-->
+                
+                <!--[if mso]>
+                <td valign="top" width="590" style="width:590px;">
+                <![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" class="rnb-del-min-width" id="Layout_34" name="Layout_34" style="min-width:100%; -webkit-backface-visibility: hidden; line-height: 10px;" width="100%">
+                <tbody><tr>
+                    <td align="center" class="rnb-del-min-width" style="min-width: 590px;" valign="top">
+                        <a href="#" name="Layout_34"></a>
+                        <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="rnb-container" style="background-color: rgb(255, 255, 255);" width="100%">
+                            <tbody><tr>
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody><tr>
+                                            <td>
+                                                <div style="border-radius:5px; width:387;;max-width:387px !important;border-top:0px None #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0px None #000;border-collapse: separate;border-radius: 0px;">
+                                                    <div><img alt="" border="0" class="rnb-header-img" hspace="0" ng-if="col.img.source != 'url'" style="display:block; float:left; border-radius: 5px; " vspace="0" width="387"/></div><div style="clear:both;"></div>
+                                                    </div></td>
+                                        </tr>
+                                    </tbody></table>
+
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr></tbody></table>
+            <!--[if mso]>
+                </td>
+                <![endif]-->
+                
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+            
+        </div></td>
+    </tr><tr>
+
+        <td align="center" valign="top">
+
+            <div style="background-color: rgb(255, 255, 255); border-radius: 0px;">
+            
+                <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                <tr>
+                <![endif]-->
+                
+                <!--[if mso]>
+                <td valign="top" width="590" style="width:590px;">
+                <![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" class="rnb-del-min-width" name="Layout_33" style="min-width:100%;" width="100%">
+                <tbody><tr>
+                    <td align="center" class="rnb-del-min-width" valign="top">
+                        <a href="#" name="Layout_33"></a>
+                        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="rnb-container" style="background-color: rgb(255, 255, 255); padding-left: 20px; padding-right: 20px; border-collapse: separate; border-radius: 0px; border-bottom: 0px none rgb(200, 200, 200);" width="100%">
+
+                                        <tbody><tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" class="rnb-container-padding" valign="top">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" class="rnb-columns-container" width="100%">
+                                                    <tbody><tr>
+                                                        <th class="rnb-force-col" style="text-align: left; font-weight: normal; padding-right: 0px;" valign="top">
+
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="rnb-col-1" valign="top" width="100%">
+
+                                                                <tbody><tr>
+                                                                    <td style="font-size:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#3c4858;"><div>
+<div>mRNA is a single-stranded molecule that mirrors the sequence of one half of a DNA strand. It plays vital roles in human biology because it facilitates protein synthesis, serving as a delivery mechanism for the genetic instructions carried in DNA.</div>
+
+<div> </div>
+
+<div>mRNA-based vaccines contain the genetic instructions for synthesis of a single viral protein that, when injected into the body, stimulates the immune system to make antibodies against a specific target. In this case, the target is a spiky protein on the SARS-CoV-2 surface – aptly named a spike glycoprotein. The mRNA sequence (the genetic sequence) carried in the vaccines <em>only encodes this protein</em>.</div>
+</div>
+</td>
+                                                                </tr>
+                                                                </tbody></table>
+
+                                                            </th></tr>
+                                                </tbody></table></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                    </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+                
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+
+            </div></td>
+    </tr><tr>
+
+        <td align="center" valign="top">
+
+            <div style="background-color: rgb(255, 255, 255); border-radius: 0px;">
+            
+                <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                <tr>
+                <![endif]-->
+                
+                <!--[if mso]>
+                <td valign="top" width="590" style="width:590px;">
+                <![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" class="rnb-del-min-width" name="Layout_35" style="min-width:100%;" width="100%">
+                <tbody><tr>
+                    <td align="center" class="rnb-del-min-width" valign="top">
+                        <a href="#" name="Layout_35"></a>
+                        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="rnb-container" style="background-color: rgb(255, 255, 255); padding-left: 20px; padding-right: 20px; border-collapse: separate; border-radius: 0px; border-bottom: 0px none rgb(200, 200, 200);" width="100%">
+
+                                        <tbody><tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" class="rnb-container-padding" valign="top">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" class="rnb-columns-container" width="100%">
+                                                    <tbody><tr>
+                                                        <th class="rnb-force-col" style="text-align: left; font-weight: normal; padding-right: 0px;" valign="top">
+
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="rnb-col-1" valign="top" width="100%">
+
+                                                                <tbody><tr>
+                                                                    <td style="font-size:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#3c4858;"><div>mRNA is somewhat fragile, so virologists house it in lipid nanoparticles to protect it. These particles are injected into a person's muscle, where they are taken up by muscle cells. The muscle cells then transcribe the mRNA to produce the spike glycoprotein, which stimulates an immune response, protecting the person from COVID-19 illness.</div>
+
+<div> </div>
+
+<div>The new mRNA-based vaccine technology allows rapid scaling of vaccine production and facilitates modification if the virus mutates significantly. And because <strong>mRNA can't enter a cell's nucleus</strong>, concerns about its safety are low.</div>
+
+<div> </div>
+
+<div>In fact, most reactions to the vaccines are considered mild or moderate in severity. Here's what that means: data from <a href="https://r.sib.foundmyfitness.com/mk/cl/f/691KUEPGzWlw2K7FI2CTZtZwrRBEWwLjd-qt5EljfzihhbXEVZon6B2hYGWbPdnRDX05Tgx8CD1DjOc7Avd0zh28RYZvJyPeDHObO7DAps2jwuLwpQHwRF1oVPagj6BBfTZvem_CGuh9aU8O_OWbvs7jfTfgCWav7pSsP2a-t-ExWduIOjTHcCMBBU5KlAsVj0HdoKJ7aM9dUXVD1IHurDKRDtc-fzxLXYqZuitN" sib_link_id="6" style="text-decoration: underline; color: rgb(0, 146, 255);">one of the clinical trials</a> showed that the most severe events after the first dose included injection site pain (2.7%) and after the second dose included fatigue (9.7%), muscle pain (8.9%), joint pain (5.2%), headache (4.5%), pain (4.1%) and redness at the injection site (2.0%). These events were typically short-lived. Most long-term effects manifest within two months of vaccination, and we're well past that stage in terms of real-world application.</div>
+
+<div> </div>
+
+<div>Since the mRNA vaccines' release, roughly <a href="https://r.sib.foundmyfitness.com/mk/cl/f/nhR-Rntcjglf7Isrf1yQNblrzgoNa1-BBv7GhfWawc--gAu5SP57VQzjGPvY1FJGn7EtlCHQZUwJek2e7mRFMGwURJwIzvWcY1fgR4Uw_hlkRn5LWFOv-8vubVoKXjX8zF-Akbf4RQLuT17zsDVnS4lDYJtxmksWYf4lYLbpctubjTzOftgS4Q33nGHdNLBH7319eEJStdCBEAvAY_ahxhJ7bus1t3nnTp81kCcLqg" sib_link_id="7" style="text-decoration: underline; color: rgb(0, 146, 255);">155 million people living in the US have had at least one dose of a vaccine</a>, the majority of which have been mRNA-based vaccines. Remarkable in scale, given the overall freshness of the technology. Yet the outcome has, by almost all accounts, been more positive than perhaps we would've dared to hope in earlier days.</div>
+
+<div> 
+<div>Looking back over the past year or so, many reasonable people have observed that the acceleration of the COVID-19 vaccines, especially the mRNA-based ones, felt fast – at least on an emotional level. The good news is it really seems like the new COVID-19 vaccines are a tremendous success story. (Note: Although I have a background in cell biology, I'm not an epidemiologist or virologist, so I say this as a mostly casual observer to these technologies.)</div>
+</div>
+</td>
+                                                                </tr>
+                                                                </tbody></table>
+
+                                                            </th></tr>
+                                                </tbody></table></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                    </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+                
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+
+            </div></td>
+    </tr><tr>
+
+        <td align="center" valign="top">
+
+            <div style="background-color: rgb(237, 246, 255); border-radius: 0px;">
+                
+                <!--[if mso 15]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                <tr>
+                <![endif]-->
+                
+                <!--[if mso 15]>
+                <td valign="top" width="590" style="width:590px;">
+                <![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" class="rnb-del-min-width" id="Layout_42" name="Layout_42" style="min-width:100%;" width="100%">
+                <tbody><tr>
+                    <td align="center" class="rnb-del-min-width" valign="top">
+                        <a href="#" name="Layout_42"></a>
+                        <table bgcolor="#edf6ff" border="0" cellpadding="0" cellspacing="0" class="rnb-container" style="max-width: 100%; min-width: 100%; table-layout: fixed; background-color: rgb(237, 246, 255); border-radius: 0px; border-collapse: separate; padding: 20px;" width="100%">
+                            <tbody><tr>
+                                <td align="left" class="rnb-container-padding" valign="top">
+
+                                    <table border="0" cellpadding="0" cellspacing="0" class="rnb-columns-container" width="100%">
+                                        <tbody><tr>
+
+                                            <th class="rnb-force-col img-block-center" style="text-align: left; font-weight: normal; padding-right: 20px;" valign="top" width="180">
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="rnb-col-2-noborder-onright" valign="top" width="180">
+
+
+                                                    <tbody><tr>
+                                                        <td align="left" class="img-block-center" style="line-height: auto;" valign="top" width="100%">
+                                                            <div style="border-top:0px none #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0px None #000;display:inline-block;"><div><a href="https://r.sib.foundmyfitness.com/mk/cl/f/s3aOzY4Vf8JRMzdjvPb9l-AsARTXUU1oe-r9nM2vDseq2vn6wQa-keBH2MyzXIuqvJTEapPnbaxqgdBMI5TezET8LVBVwyqaFjP9VLEjJ_cKgmzCsmqActaqbeNMNqOfsmBpcR1ZIcSw2A25A68VBSApcevybkQweCmnKpWV9tJOcB6Y88-wkwqYPWcTlAJdP9aErA1toh0xKV0Owv0t9JWj1es7sylFpqiWinxBm_GLq8utTS1JGTi0Y-Pq_tOA8w" sib_link_id="8" target="_blank"><img alt="" border="0" class="rnb-col-2-img-side-xl" hspace="0" ng-if="col.img.source != 'url'" style="vertical-align:top; float: left; max-width:360px !important; " vspace="0" width="180"/></a></div><div style="clear:both;"></div></div></td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                </th><th class="rnb-force-col" style="text-align: left; font-weight: normal" valign="top">
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="rnb-last-col-2" valign="top" width="350">
+
+                                                    <tbody><tr>
+                                                        <td style="font-size:24px; font-family:Arial,Helvetica,sans-serif; color:#3c4858; text-align:left;">
+                                                            <span style="color:#3c4858; "><font size="4"><b>Learn more about mRNA COVID-19 vaccines on the latest episode of The Aliquot Preview podcast.</b></font></span></td>
+                                                    </tr><tr>
+                                                        <td height="10" style="font-size:1px; line-height:10px; mso-hide: all;"> </td>
+                                                    </tr><tr>
+                                                        <td class="rnb-mbl-float-none" style="font-size:14px; font-family:Arial,Helvetica,sans-serif;color:#3c4858;float:right;width:350px;"><div>I spoke with Dr. Roger Seheult, a quadruple board-certified physician serving on the frontlines of COVID-19 care and co-founder of MedCram, about the mRNA vaccines.<br/>
+<br/>
+You can hear what he had to say in our Aliquot Preview – a once-per-month podcast that shares an Aliquot episode usually reserved just for FMF Premium Members (<a href="https://r.sib.foundmyfitness.com/mk/cl/f/OznzsmJnvI27a_psM_lvEvX38CYUrzvHioyQyuxb54SEcbRTcaa-SGg4-nefxZ_ZVTpzFY5RlaPMcz0A0wEwGgditax5PoVNKy7MseBRWrWNHuLgRnIYB9NtBqWSmmF01c0AMfWbA1G5pCnc5GKFkW3d333z-X66kfkQM5eHePSdkoVuvZfAfrCZSZz11EpXBJxhP0myMgXG6UEPx2tFUkOHYCpEb1E1NkRafX1Q-Uj5-erROIVBbH-E4P9bYKvA_uN_XaqlSz6Pa9ME1Mj4n2m6k49Vn7yx4EG1KBS5rKWkq6uDCTzmJBDR" sib_link_id="9" style="text-decoration: underline; color: rgb(0, 146, 255);">learn more about member benefits here</a>.)</div>
+
+<div> </div>
+
+<div>To listen to this episode of The Aliquot preview, subscribe to The Aliquot Preview on Apple Podcasts.</div>
+</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="10" style="font-size:1px; line-height:10px; mso-hide: all;"> </td>
+                                                    </tr><tr>
+                                                        <td valign="top">
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="rnb-btn-col-content" style="border-collapse: separate;">
+
+                                                                <tbody><tr>
+                                                                    <td align="center" bgcolor="#0092ff" height="32" style="font-size:14px; font-family:Arial,Helvetica,sans-serif; text-align:center; color:#ffffff; font-weight:normal; padding-left:14px; padding-right:14px; background-color:#0092ff; border-radius:4px;border-top:0px None #000;border-right:0px None #000;border-bottom:0px None #000;border-left:0px None #000;border-collapse: separate;" valign="middle" width="auto">
+                                                                        <span style="color:#ffffff; font-weight:normal;">
+                                                                        <a href="https://r.sib.foundmyfitness.com/mk/cl/f/wk1Dqv36G2XLbtzPsvaMwHprAQsau4851FRWXTGpxheequlfdNyHhe_2v_7QZUsHeF-A4m5vK03xAW1Xvy4nNUUSaMrjuFL1ue48J9Nh-ms_hxbXE6GguIBt4aFKxjDW8EIBJFmDXGkoRgzeMaU88jiLA7IYlt0-SXTHVLzboz6pPe6qEq5TFFS139fQ3V4A7mOiupJtD75km8oHBZwq4ZJIkR8qZi6jrj_OqOEpdrZ6wq_BYm478lfcMHSQlX7yRDQ" sib_link_id="10" style="text-decoration:none; color:#ffffff; font-weight:normal;" target="_blank">Subscribe to The Aliquot Preview</a>
+                                                                        
+                                                                       </span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                        </td>
+
+                                                    </tr></tbody></table>
+                                                </th>
+
+                                            </tr></tbody></table></td>
+                            </tr>
+                        </tbody></table>
+
+                    </td>
+                </tr>
+            </tbody></table>
+            <!--[if mso 15]>
+                </td>
+                <![endif]-->
+
+                <!--[if mso 15]>
+                </tr>
+                </table>
+                <![endif]-->
+            
+        </div></td>
+    </tr><tr>
+
+        <td align="center" valign="top">
+
+            <div style="background-color: rgb(255, 255, 255); border-radius: 0px;">
+            
+                <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                <tr>
+                <![endif]-->
+                
+                <!--[if mso]>
+                <td valign="top" width="590" style="width:590px;">
+                <![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" class="rnb-del-min-width" name="Layout_36" style="min-width:100%;" width="100%">
+                <tbody><tr>
+                    <td align="center" class="rnb-del-min-width" valign="top">
+                        <a href="#" name="Layout_36"></a>
+                        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="rnb-container" style="background-color: rgb(255, 255, 255); padding-left: 20px; padding-right: 20px; border-collapse: separate; border-radius: 0px; border-bottom: 0px none rgb(200, 200, 200);" width="100%">
+
+                                        <tbody><tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" class="rnb-container-padding" valign="top">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" class="rnb-columns-container" width="100%">
+                                                    <tbody><tr>
+                                                        <th class="rnb-force-col" style="text-align: left; font-weight: normal; padding-right: 0px;" valign="top">
+
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="rnb-col-1" valign="top" width="100%">
+
+                                                                <tbody><tr>
+                                                                    <td style="font-size:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#3c4858;"><div>
+<div>The research on these vaccines is constantly evolving. If you're looking to hear my most up-to-date commentary, I discuss COVID vaccines often during my live Q&amp;As with FMF Premium Members. I answered a question on mRNA vaccines and breastfeeding during my <a href="https://r.sib.foundmyfitness.com/mk/cl/f/8T8phB0YFOxfY_t1FTM7hevo7-idqgE1pnkWUGtFq68_Ap9PMyO8LkTLqVhw99sBqAlqj75nT3VSL7wv8enmszgAXZoyKHHVvcdczAuGZd7TpEGnxQxkf9FKqR7I0Gf9935AHLE1aWMy7G8qBVPkeG8sjXFPKVTucV2H8pLaTEfk-hugZQOmMwEkzbY-GQ4nZvVEkHvbXvLAscvWD-keaa3uwdJZdzxxAlZdVa9fUIVKokHwTvOMXWmAjowD3v6MVc1Ziqyt5XNHI1xmHFA-Ay4QqMIpg2qjOrhyrqPoRTy7IQ9wzF_754ozKO6cX-PxZw" sib_link_id="11" style="text-decoration: underline; color: rgb(0, 146, 255);">Q&amp;A on May 1st</a>. Learn more about joining my live Q&amp;As and becoming a FoundMyFitness Premium Member <a href="https://r.sib.foundmyfitness.com/mk/cl/f/VhHFIB6tD5zhu885inlTzdiBctJDzZHQcC99Auck8QD-AE5FdEFtg-75H-CeKSJ5suJpzYYnZJttuxSc8pYVKa606I1-Z5-nWuP830L5YP7hV8Pf56vwji8P8d-S3NuJf2wb_-BnOYN1wqrtOJ8w6VA5lPRGE72peyMywLiF-qDKiuL8xJF12y06Iooz5IsON94_bC1_DHtfrtWBNnPXvTxDsfsu3-gTarrD5mMjB_fikU3YERUPiHeiyzPrXPv_91ZgQz3uS0j_PuIWy9ityBdT8Yq7-IXesHrvw_gWxw4mRfb8cMRVkLqtBXKWH3oq" sib_link_id="12" style="text-decoration: underline; color: rgb(0, 146, 255);">here</a>.</div>
+</div>
+</td>
+                                                                </tr>
+                                                                </tbody></table>
+
+                                                            </th></tr>
+                                                </tbody></table></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                    </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+                
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+
+            </div></td>
+    </tr><tr>
+
+        <td align="center" valign="top">
+
+            <div style="background-color: rgb(255, 255, 255); border-radius: 0px;">
+            
+                <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                <tr>
+                <![endif]-->
+                
+                <!--[if mso]>
+                <td valign="top" width="590" style="width:590px;">
+                <![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" class="rnb-del-min-width" name="Layout_37" style="min-width:100%;" width="100%">
+                <tbody><tr>
+                    <td align="center" class="rnb-del-min-width" valign="top">
+                        <a href="#" name="Layout_37"></a>
+                        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="rnb-container" style="background-color: rgb(255, 255, 255); padding-left: 20px; padding-right: 20px; border-collapse: separate; border-radius: 0px; border-bottom: 0px none rgb(200, 200, 200);" width="100%">
+
+                                        <tbody><tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" class="rnb-container-padding" valign="top">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" class="rnb-columns-container" width="100%">
+                                                    <tbody><tr>
+                                                        <th class="rnb-force-col" style="text-align: left; font-weight: normal; padding-right: 0px;" valign="top">
+
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="rnb-col-1" valign="top" width="100%">
+
+                                                                <tbody><tr>
+                                                                    <td style="font-size:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#3c4858;"><div>
+<div>Talk to you soon...</div>
+
+<div> </div>
+
+<div>Rhonda</div>
+
+<div> </div>
+
+<div>P.S. After my conversation with Dr. Seheult, a segment of which is playable in the Aliquot linked above, I received both a first and a second dose of an mRNA-based vaccine, Pfizer-BioNTech.</div>
+</div>
+</td>
+                                                                </tr>
+                                                                </tbody></table>
+
+                                                            </th></tr>
+                                                </tbody></table></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                    </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+                
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+
+            </div></td>
+    </tr><tr>
+
+        <td align="center" valign="top">
+
+            <div style="background-color: rgb(255, 255, 255); border-radius: 0px;">
+            
+                <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                <tr>
+                <![endif]-->
+                
+                <!--[if mso]>
+                <td valign="top" width="590" style="width:590px;">
+                <![endif]-->
+                <table border="0" cellpadding="0" cellspacing="0" class="rnb-del-min-width" name="Layout_11" style="min-width:100%;" width="100%">
+                <tbody><tr>
+                    <td align="center" class="rnb-del-min-width" valign="top">
+                        <a href="#" name="Layout_11"></a>
+                        <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="rnb-container" style="background-color: rgb(255, 255, 255); padding-left: 20px; padding-right: 20px; border-collapse: separate; border-radius: 0px; border-bottom: 0px none rgb(200, 200, 200);" width="100%">
+
+                                        <tbody><tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" class="rnb-container-padding" valign="top">
+
+                                                <table border="0" cellpadding="0" cellspacing="0" class="rnb-columns-container" width="100%">
+                                                    <tbody><tr>
+                                                        <th class="rnb-force-col" style="text-align: left; font-weight: normal; padding-right: 0px;" valign="top">
+
+                                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="rnb-col-1" valign="top" width="100%">
+
+                                                                <tbody><tr>
+                                                                    <td style="font-size:14px; font-family:Arial,Helvetica,sans-serif, sans-serif; color:#3c4858;"><div><span style="font-size:12px;"><span style="color:#666666;"><a href="https://r.sib.foundmyfitness.com/mk/un/c2pLgGb4GwXSrMdSkkqBN3hkVNkVoTPey2sK5nWqJFVJxkU_TPPw6WCHIxtiQZl7I_IdCmXWKjAyEYiEVN7NHYysev5b6YH1CTIhGX80yc5E_pupPT4-1o7s9O__TGHoB49Hp3AZYj89nF9a3jZe3oSQXjt3sdQcVedwVZkmsM8" style="text-decoration: underline; color: rgb(0, 146, 255);">Unsubscribe</a> | © 2021 FoundMyFitness, LLC | PO Box 99785, San Diego, CA, 92169</span></span></div>
+</td>
+                                                                </tr>
+                                                                </tbody></table>
+
+                                                            </th></tr>
+                                                </tbody></table></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20" style="font-size:1px; line-height:20px; mso-hide: all;"> </td>
+                                        </tr>
+                                    </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table><!--[if mso]>
+                </td>
+                <![endif]-->
+                
+                <!--[if mso]>
+                </tr>
+                </table>
+                <![endif]-->
+
+            </div></td>
+    </tr></tbody></table>
+            <!--[if gte mso 9]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                        </td>
+        </tr>
+        </tbody></table>
+
+ <div align="center" style="color: #727272; font-size: 10px;">If you wish to unsubscribe from our newsletter, click <a href="https://r.sib.foundmyfitness.com/mk/un/c2pLgGb4GwXSrMdSkkqBN3hkVNkVoTPey2sK5nWqJFVJxkU_TPPw6WCHIxtiQZl7I_IdCmXWKjAyEYiEVN7NHYysev5b6YH1CTIhGX80yc5E_pupPT4-1o7s9O__TGHoB49Hp3AZYj89nF9a3jZe3oSQXjt3sdQcVedwVZkmsM8" style="color:#01a4c6;" target="_blank">here</a></div><div><img height="1" src="https://r.sib.foundmyfitness.com/mk/op/E-wo1TDv_B9y9NQf22BzXaAZzIltaSABNsUsveXpLVx8A-j0WeZO1iaZU8i3XxgSwsMB0vgE9h-A1HWxO3d6j0yAdCsIYEp7Qbo-c1W34geuZak6kneSNRJW1X41OzPdZQ" width="1"/></div>  
+</body></html>
