@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html><head><!--[if !mso]><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]--><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="en-us" http-equiv="Content-Language"/><meta content="telephone=no" name="format-detection"/><meta content="date=no" name="format-detection"/><meta content="address=no" name="format-detection"/><meta content="email=no" name="format-detection"/><style data-ac-keep="true"> .ExternalClass { width: 100%; background: inherit; background-color: inherit; } .ExternalClass p, .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undoreset div p, .undoreset p { margin-bottom: 20px; } div[class^="aolmail_divbody"] { overflow: auto; } [owa] #ac-footer { padding: 20px 0px !important; background: inherit; background-color: inherit; } </style><style data-ac-keep="true">
+@media only screen and (max-width: 600px) { /*-------------------------------------------------------------------------*\ Abandoned Cart widget \*------------------------------------------------------------------------*/ .td_abandoned-cart img {display: block;padding-right: 0 !important;padding-bottom: 0 !important;width: 100% !important;max-width: 100% !important;height: auto !important;} body { padding: 0!important; font-size:1em!important; } * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } *[class].divbody {-webkit-text-size-adjust:none !important; width:auto !important;} *[class].td_picture img {width:auto !important;} *[class].td_text { line-height: 110%; } *[class].td_button { width: auto; } /* Collapse all block elements */ :not(.body) table { display: block!important; float:none!important; border-collapse:collapse !important; width:100% !important; min-width:100% !important; clear:both!important; } :not(.body) thead,
+:not(.body) tbody, :not(.body) tr { display:block!important; float:none!important; width:100% !important; } :not(.body) th, :not(.body) td, :not(.body) p { display:block!important; float:none!important; width:100% !important; clear:both!important; } /* Remove browser default styling for elements */ ul, ol { margin-left: 20px; margin-bottom: 10px; margin-top: 10px; -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-padding-start: 0; } /* Set default height for spacer once collapse */ *[class].spacer { height: auto!important; } a[href^=date]{ color:inherit !important; text-decoration:none !important;} a[href^=telephone]{ color:inherit !important; text-decoration:none !important;} a[href^=address]{ color:inherit !important; text-decoration:none !important;} a[href^=email]{ color:inherit !important; text-decoration:none !important;} /* Default table cell height */ td[height="14"]{height:14px!important;font-size:14px!important;line-height:14px!important;}
+td[height="0"]{height:0px!important;font-size:0px!important;line-height:0px!important;}
+td[height="12"]{height:12px!important;font-size:12px!important;line-height:12px!important;} /*-------------------------------------------------------------------------*\ Product Widget \*-------------------------------------------------------------------------*/ .td_product > div { float: none !important; width: 100% !important; margin-bottom: 20px !important; } .td_product > div img { width: 75% !important; } /* Default social icons */ *[class].ac-social-icon-16 {width:16px !important; height:16px !important;} *[class].ac-social-icon-24 {width:24px !important; height:24px !important;} *[class].ac-social-icon-28 {width:28px !important; height:28px !important;} *[class].__ac_social_icons { margin-right: 0px !important; } }
+</style><style data-ac-keep="true"> @media only screen and (max-width: 320px) { #layout-row4578 img { width: 100% !important; height: auto !important; max-width: 320px !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a {
+display: inline-block !important; margin: auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 375px) { #layout-row4578 img { width: 100% !important; height: auto !important; max-width: 375px !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important;
+margin: auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 414px) { #layout-row4578 img { width: 100% !important; height: auto !important; max-width: 414px !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important;
+margin: auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 667px) { #layout-row4578 img { width: 100% !important; height: auto !important; max-width: 600px !important; } .td_rss .rss-item img.iphone_large_image { width: auto !important; } u + .body { display: table !important; width: 100vw !important; min-width: 100vw !important; } u + .body table { display: table !important; width: 100% !important; min-width: 100% !important; } u + .body td { display: block !important; width: 100% !important; min-width: 100% !important; } u + .body img { display: inline-block !important; margin: auto !important; width: auto !important; vertical-align: bottom !important; } u + .body center { display: block !important; margin: auto !important; width: 100% !important; min-width: 100% !important; text-align: center !important; } u + .body table._ac_social_table, u + .body table._ac_social_table td, u + .body table._ac_social_table div, u + .body table._ac_social_table a { display: inline-block !important;
+margin: auto !important; width: auto !important; min-width: auto !important; text-align: center !important; } u + .body table._ac_social_table img { display: inline-block !important; margin: auto !important; width: 32px !important; min-width: 32px !important; max-width: 32px !important; }
+} </style><!--[if !mso]><!-- webfonts --><!--<![endif]--><!--[if lt mso 12]> <![endif]--></head><body class="body" id="ac-designer" style="font-family: Arial; line-height: 1.1; margin: 0px; background-color: #f5f5f5; width: 100%; text-align: center;">		<div style="display:none; padding:0; height:1px; font-size:1px; background-color:inherit !important; color:inherit !important; line-height:1px; mso-hide:all;">
+			Plus Failure Theory &amp; The Non-Wisdom Of Crowds
+		</div>
+<img border="0" height="1" style="display:block;width:1px!important;min-width:1px!important;max-width:1px!important;height:1px!important;border:0;overflow:hidden;" width="1"/><div class="divbody" style="margin: 0px; outline: none; padding: 0px; color: #000000; font-family: arial; line-height: 1.1; width: 100%; background-color: #f5f5f5; background: #f5f5f5; text-align: center;"><table align="left" border="0" cellpadding="0" cellspacing="0" class="template-table" style="font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f5f5f5; background: #f5f5f5;" width="100%"><tbody><tr><td align="center" valign="top" width="100%"><table bgcolor="#f5f5f5" border="0" cellpadding="0" cellspacing="0" class="template-table" style="font-size: 14px; min-width: auto;
+mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 597px;" width="597"><tbody><tr><td align="center" id="layout_table_e04c4f1de773ece52d3125efc9d7bc0e80740d49" style="background-color: #ffffff;" valign="top" width="597"><table border="0" cellpadding="0" cellspacing="0" class="layout layout-table root-table" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;" width="597"><tbody><tr style="background-color: #ffffff;"><td id="layout-row-margin4578" style="padding: 5px 20px 5px 20px; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr align="center" class="layout layout-row widget _widget_picture style4578" id="layout-row4578" style=""><td id="layout-row-padding4578" style="padding: 20px 0px 0px 0px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="center" class="image-td" valign="top" width="557"><img alt="" src="https://threemagnolia.imgus11.com/public//4fa87d3b55319f348ff7e75cc54f7e78.png?r=2093406366" style="display: block; border: none; outline: none; width: 400px; opacity: 1; max-width: 100%;" width="400"/></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4579" style="padding: 15px 0px 7px 0px; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4579" id="layout-row4579" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4579" style="background-color: #ffffff; padding: 0px 30px 10px 30px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4276" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration:
+inherit; font-family: Arial; mso-line-height-rule: exactly;" valign="top" width="537"> <div class="" data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; text-align: center; line-height: 1.4; mso-line-height-rule: exactly;"><span class="" style="color: inherit; font-size: 17px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span class="" style='color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'> </span><div class="" style="margin: 0; outline: none; padding: 0; color: #000000; font-family: arial; font-size: 17px; font-style: normal; font-weight: 400; text-align: start;"></div>
+ <span class="" style='color: #000000; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman"; font-style: italic;'>"I don't know half of you half as well as I should like; and I like less than half of you half as well as you deserve." <br class=""/></span><span class="" style='color: inherit; font-size: 14px; font-weight: bold; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'>Bilbo Baggins </span><br class=""/></span></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4276, #text_div4276 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr class="layout layout-row clear-this" id="layout-row4593" style="background-color: #ffffff;"><td id="layout-row-padding4593" style="background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td id="layout_table_f682964f198828a325e67fa6575c5ffccc26209a" style="background-color: #ffffff;" valign="top" width="299"><table border="0" cellpadding="0" cellspacing="0" class="layout layout-table" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;" width="299"><tbody><tr style="background-color: #ffffff;"><td id="layout-row-margin4582" style="padding: 3px 0px 3px 0px; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial
+!important;" width="100%"><tbody><tr class="layout layout-row widget _widget_button style4582" id="layout-row4582" style="background-color: #ffffff;"><td id="layout-row-padding4582" style="background-color: #ffffff; padding: 15px 5px 15px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_button td_block customizable" valign="top" width="254"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: center;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGbmV3c2xldHRlciUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&a=223239693&account=threemagnolia%2Eactivehosted%2Ecom&email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&s=85cdb3bc4a43641022e9d16fa2d24926&i=1222A1718A4A40606" style="v-text-anchor:middle; width:225px; height:76px; " arcsize="10%" strokecolor="#595959" strokeweight="1pt" fillcolor="#ffffff" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#030303;font-family:georgia, times new roman; font-size:20px; line-height: 1.1;"><span style="font-weight: bold;">&nbsp; &nbsp; &nbsp; Subscribe&nbsp; &nbsp; &nbsp; &nbsp;</span></center> </v:textbox>
+</v:roundrect>
+<![endif]--> <a href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGbmV3c2xldHRlciUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40606" style="margin: 0; outline: none; padding: 17px; color: #030303; background-color: #ffffff; border: 1px solid #595959; border-radius: 3px; font-family: georgia, times new roman; font-size: 20px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;"> <span style="color:#030303;font-family:georgia, times new roman;font-size:20px;"> <span style="font-weight: bold;">      Subscribe       </span> </span> </a> </div>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td id="layout_table_6b45d27a9aa69f2baca4bef12a5099fe38779804" style="background-color: #ffffff;" valign="top" width="298"><table border="0" cellpadding="0" cellspacing="0" class="layout layout-table" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;" width="298"><tbody><tr style="background-color: #ffffff;"><td id="layout-row-margin4591" style="padding: 3px 0px 3px 0px; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_button style4591" id="layout-row4591" style=""><td id="layout-row-padding4591" style="padding: 15px 40px 15px 5px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace:
+0pt;" width="100%"><tbody><tr><td align="left" class="td_button td_block customizable" valign="top" width="253"> <div class="button-wrapper" style="margin: 0; outline: none; padding: 0; text-align: center;">
+<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://threemagnolia.activehosted.com/p_v.php?l=4&c=1222&m=1718&s=85cdb3bc4a43641022e9d16fa2d24926" style="v-text-anchor:middle; width:227px; height:76px; font-weight: bold;" arcsize="10%" strokecolor="#595959" strokeweight="1pt" fillcolor="#FFFFFF" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#000000;font-family:georgia, times new roman; font-size:20px; font-weight: bold;line-height: 1.1;">Read in Browser</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="http://threemagnolia.activehosted.com/p_v.php?l=4&amp;c=1222&amp;m=1718&amp;s=85cdb3bc4a43641022e9d16fa2d24926" style="margin: 0; outline: none; padding: 17px; color: #000000; background-color: #FFFFFF; border: 1px solid #595959; border-radius: 3px; font-family: georgia, times new roman; font-size: 20px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;"> <span style="color:#000000;font-family:georgia, times new roman;font-size:20px;font-weight: bold;"> Read in Browser </span> </a> </div>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4600" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_spacer style4600" id="layout-row4600" style=""><td id="layout-row-padding4600" style="padding: 0;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td height="10" valign="top"><div class="spacer" style="margin: 0; outline: none; padding: 0; height: 10px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td class="spacer-body" height="10" style="background-color:
+#f5f5f5;" valign="top" width="597"> </td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4598" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4598" id="layout-row4598" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4598" style="background-color: #ffffff; padding: 15px 40px 5px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4294" style="line-height: 138%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.38; text-decoration: inherit;
+font-family: Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div class="" data-line-height="1.38" style="line-height: 138%; margin: 0; outline: none; padding: 0; line-height: 1.38; mso-line-height-rule: exactly;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline:
+none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"><span class="" style='color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'><div class="" style="margin: 0; outline: none; padding: 0; font-size: 16px;"></div>
+<div class="" style="margin: 0; outline: none; padding: 0;"><span class="" style="color: #000000; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Hi,<br/><br/>When we started working on <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZtdXRpbnlmdW5kLmNvbSUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40634" style="margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Mutiny Funds</span></a>, we started out by trying to answer a fundamental question:<br/><br/>How do we protect our wealth
+and our family’s future amidst an unknown and chaotic world?<br/><br/>For the past decade, we’ve been researching and working on answers.<br/><br/>Today, I am excited to announce the latest iteration with our most up-to-date thinking: <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZtdXRpbnlmdW5kLmNvbSUyRmNvY2tyb2FjaCUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40635" style="margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">the Cockroach Strategy</span></a>.<br/><br/>Cockroaches aren’t anyone’s favorite animal, but
+they do two things well that we also want out of our portfolios: they’re hard to kill and they compound fast.<br/><br/>The Cockroach strategy is intended to be a "total portfolio" solution with different components designed for all known economic regimes. More information on this to come, but, if you’re interested in learning more, be sure to <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZtdXRpbnlmdW5kLmNvbSUyRmNvY2tyb2FjaCUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjElMjNjb2Nrcm9hY2gtaW50ZXJlc3QtZm9ybQ==&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40636" style="margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height:
+inherit; text-decoration: inherit;">fill out the form at the bottom of the post</span></a>.<br/><br/>As always, if you enjoy or get value from <span class="" style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic;">The Interesting Times</span>, I'd really appreciate it if you would support it by forwarding it to a friend or sharing it wherever you typically share this sort of thing - (Twitter, LinkedIn, Slack groups, etc.) You can <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGbmV3c2xldHRlciUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40606" style="margin: 0;
+outline: none; padding: 0; color: #0080ff; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">read past editions here</span></a>.<br/><div class="" style="margin: 0; outline: none; padding: 0; font-size: 20px; font-weight: bold; text-align: center;"><br class=""/></div>
+</span></div>
+<div class="" style="margin: 0; outline: none; padding: 0;"><br class="" style="font-size: 16px; color: #000000;"/></div>
+</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"> </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4294, #text_div4294 div { line-height: 138% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4599" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_spacer style4599" id="layout-row4599" style=""><td id="layout-row-padding4599" style="padding: 0;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td height="10" valign="top"><div class="spacer" style="margin: 0; outline: none; padding: 0; height: 10px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td class="spacer-body" height="10" style="background-color:
+#f5f5f5;" valign="top" width="597"> </td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4597" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4597" id="layout-row4597" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4597" style="background-color: #ffffff; padding: 15px 40px 0px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4293" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family:
+Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div class="" data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; font-size: 32px; line-height: 1.4; mso-line-height-rule: exactly;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"> <div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><b class="" style='margin: 0; outline: none; padding: 0; font-family: georgia, "times new roman"; font-weight: normal;'><span class="" style='color: #000000; font-size: 32px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman"; font-style: normal;'>The Best of What I’ve Been
+Consuming<br/></span></b></div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4293, #text_div4293 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4601" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4601" id="layout-row4601" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4601" style="background-color: #ffffff; padding: 15px 40px 5px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4297" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family:
+Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div class="" data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; line-height: 1.4; mso-line-height-rule: exactly;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"><div class="droparea" contenteditable="false" style="margin: 0; outline: none; padding: 0;"></div>
+ <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"> <div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"> <span class="" style='color: #000000; font-size: 19px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'> </span><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><br class=""/></div>
+<div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><span class="" style='color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'><b class="" style="margin: 0; outline: none; padding: 0; font-size: 16px; color: #000000; font-weight: bold;"><b class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><span class="" style="color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><a class="" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGYm9va3JldmlldyUyRm1ldGFwaG9ycy13ZS1saXZlLWJ5JTJGJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTI1M0ElMkJNZXRhcGhvcnMlMkJXZSUyQkxpdmUlMkJCeSUyNnV0bV9jYW1wYWlnbiUzRFRoZSUyQkludGVyZXN0aW5nJTJCVGltZXMlMkJXZWVrbHklMkIwNS0yMS0yMQ==&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40641" style="margin: 0; outline: none; padding: 0; color: #000000; text-decoration: underline;" target="_blank"><span class="" style="color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Metaphors We Live By (Book)</span></a><br class=""/></span></b></b><span class="" style='color: #000000; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'><span class="" style="color: inherit; font-size: inherit; font-weight: 400; line-height:
+inherit; text-decoration: inherit; font-style: italic;">George Lakoff <br class=""/><br class=""/></span><div class="" style="margin: 0; outline: none; padding: 0;">An Iranian student who moved to the U.S. to study chemistry. He noticed that he kept hearing people talking about the "solution of my problems." <br class=""/><br class=""/>Being a chemist, he understood the word "solution" to mean a liquid chemical solution, the kind you would have in a lab. The "solution of my problems," as he understood it, was like a test tube that bubbled and smoke with all the complexity of your problems inside.<br class=""/><br class=""/>You could heat it up and cool it down. You could add other chemicals to it and this might make the problems stronger or weaker. However, the solution would never completely go away, it was just an always changing composition.<br class=""/><br class=""/>This stuck him as an elegant and thoughtful way to talk about problems: everyone has problems
+in their life. Sometimes more, sometimes fewer, and of different intensities, but problems are a normal part of life that we all deal with every day.<br class=""/><br class=""/>Of course, this is not actually what the phrase "solution of my problems" means to most people. We use a very different metaphor.<br class=""/><br class=""/>The metaphor we’re actually using when we refer to the "solution" is thinking of problems in terms of a puzzle. <br class=""/><br class=""/>We try to "solve" our problems. Having a problem is like having an uncompleted puzzle, it’s something that is not right and needs to be fixed.<br class=""/><br class=""/>Unlike the liquid chemical solution metaphor that the young Iranian student understood, the puzzle metaphor suggests that problems are something that can be definitively fixed. Once it’s fixed, the problem is gone and never needs to be re-addressed, just like a completed puzzle requires no more work once it's done.<br class=""/><br class=""/>A problem is not a puzzle, nor is it a chemical solution. The idea of a "problem" is an abstract concept that isn’t rooted in a specific physical reality.<br class=""/><br class=""/>Thinking about abstract concepts is hard and so we tend to rely on metaphors to process them and root them in our natural experience.<br class=""/><br class=""/>We use metaphors to think about all the most important things in our life: love, time, ideas, arguments, labor, happiness, health, and morality are all abstract concepts that we think about in terms of metaphors rooted in our day-to-day experience.<br class=""/><br class=""/>These concepts require metaphorical definition, since they are not clearly enough delineated in their own terms to satisfy the purposes of our day-to-day functioning.<br class=""/><br class=""/>However, as the "solution of my problems" examples show: the metaphor you use has a really big impact on how you relate to that concept and how it guides your
+behavior.<br/><br/>How we can create and use better metaphors is the key question of George Lakoff's <span style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic;">Metaphors We Live By</span>.<br class=""/><br class=""/><a class="" data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGYm9va3JldmlldyUyRm1ldGFwaG9ycy13ZS1saXZlLWJ5JTJGJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTI1M0ElMkJNZXRhcGhvcnMlMkJXZSUyQkxpdmUlMkJCeSUyNnV0bV9jYW1wYWlnbiUzRFRoZSUyQkludGVyZXN0aW5nJTJCVGltZXMlMkJXZWVrbHklMkIwNS0yMS0yMQ==&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40641" style="margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Read My
+Full Review of Metaphors We Live By</span></a><br class=""/></div>
+</span></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><br class="" style='color: #000000; font-family: georgia, "times new roman";color: #000000; font-family: georgia, "times new roman"; font-size: 16px; font-weight: 400;'/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; font-size: 16px;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding:
+0; color: #000000;"> </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4297, #text_div4297 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4602" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4602" id="layout-row4602" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4602" style="background-color: #ffffff; padding: 15px 40px 5px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4298" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family:
+Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; line-height: 1.4; mso-line-height-rule: exactly;"> <div style="margin: 0; outline: none; padding: 0;"> <div style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0;
+outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"> <div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"> <span class="" style='color: #000000; font-size: 19px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'> </span><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><b class="" style='margin: 0; outline: none; padding: 0; color: #000000; font-family: georgia, "times new roman"; font-size: 16px; font-weight: bold;'><b class="" style="margin: 0; outline: none; padding: 0;"><br class=""/></b></b></div>
+<div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><span class="" style='color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'><b class="" style="margin: 0; outline: none; padding: 0; font-size: 16px; color: #000000; font-weight: bold;"><b class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><span class="" style="color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span class="" style="color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><a class="" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZib3ouY29tJTJGYXJ0aWNsZXMlMkZmYWlsdXJlLXRoZW9yeSUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40639" style="margin: 0; outline: none; padding: 0; color: #000000; text-decoration: underline;" target="_blank"><span style="color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Failure Theory</span></a> </span><br class=""/></span></b></b><span class="" style='color: #000000; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'><span class="" style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration:
+inherit; font-style: italic;">boz<br class=""/></span><br/>A thoughtful reflection on how complex systems, particularly companies, tend to fail:<br/><br/></span></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<blockquote style="margin: 0 0 0 40px; outline: none; padding: 0px; border: none;"><div style="margin: 0; outline: none; padding: 0;"><div style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><span class="" style='color: #000000; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman"; font-style: italic;'>Many of the efforts we have to defend against failure create catastrophic complexity without meaningfully reducing failure at all. For example after a rare failure we may introduce daily complexity in spite of the fact that failure was already acknowledged to be rare. I recall the story of the nuclear meltdown at 3 Mile Island where a sensor was installed to detect a rare
+but serious condition. Unfortunately the nature of the condition made it impossible for the sensor to be very reliable but the engineers figured better to have false positives than miss the condition. But that backfired because the operators became habituated to that signal being faulty so they ignored it when it wasn’t. Had no sensor been installed at all it is very likely they would have noticed other conditions precipitating the disaster and prevented it.</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="margin: 0; outline: none; padding: 0;"><div style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0;
+outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><br style='color: #000000; font-family: georgia, "times new roman";color: #000000; font-family: georgia, "times new roman"; font-size: 16px; font-weight: 400;font-style: italic;'/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="margin: 0; outline: none; padding: 0;"><div style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0;
+outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><span class="" style='color: #000000; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman"; font-style: italic;'>This is the reason why I tend to prefer less structure in organizations. There is more chaos but failures tend to be less correlated and less catastrophic. Instead of protecting my teams from change I try to ensure they are antifragile. Instead of preventing all mistakes I focus more on preventing a small number of major mistakes. Instead of enforcing stronger processes I try to give more latitude to people on the ground.</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="margin: 0; outline: none; padding: 0;"><div style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0;
+outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote><div style="margin: 0; outline: none; padding: 0;"><div style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin:
+0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><br class="" style='color: #000000; font-family: georgia, "times new roman";color: #000000; font-family: georgia, "times new roman"; font-size: 16px; font-weight: 400;'/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; font-size: 16px;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding:
+0; color: #000000;"> </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4298, #text_div4298 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4603" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4603" id="layout-row4603" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4603" style="background-color: #ffffff; padding: 15px 40px 5px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4299" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family:
+Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; line-height: 1.4; mso-line-height-rule: exactly;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0;"> <div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"> <div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"> <span class="" style='color: #000000; font-size: 19px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'> </span><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><b class="" style='margin: 0; outline: none; padding: 0; color: #000000; font-family: georgia, "times new roman"; font-size: 16px; font-weight:
+bold;'><b class="" style="margin: 0; outline: none; padding: 0;"><br class=""/></b></b></div>
+<div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><span class="" style='color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'><b class="" style="margin: 0; outline: none; padding: 0; font-size: 16px; color: #000000; font-weight: bold;"><b class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><span class="" style="color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><a class="" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cucmNtYWx0ZXJuYXRpdmVzLmNvbSUyRjIwMjElMkYwNSUyRnRoZS1ub24td2lzZG9tLW9mLWNyb3dkcy13aXRoLW5pZ29sLWtvdWxhamlhbi1vZi1xdWVzdC1wYXJ0bmVycyUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40640" style="margin: 0; outline: none; padding: 0; color: #000000; text-decoration: underline;" target="_blank"><span style="color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">T</span></a><span class="" style="color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><a class="" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cucmNtYWx0ZXJuYXRpdmVzLmNvbSUyRjIwMjElMkYwNSUyRnRoZS1ub24td2lzZG9tLW9mLWNyb3dkcy13aXRoLW5pZ29sLWtvdWxhamlhbi1vZi1xdWVzdC1wYXJ0bmVycyUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40640" style="margin: 0; outline: none; padding: 0; color: #000000; text-decoration: underline;" target="_blank"><span style="color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">he Non-Wisdom Of Crowds With Nigol Koulajian Of Quest Partners</span></a><br class=""/></span></span></b></b><span class="" style='color: #000000; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'><span class="" style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic;">RCM Alternatives <br class=""/></span><br class=""/>We like to talk about the wisdom of crowds, but it’s often the case that crowds are wildly wrong such as in financial bubbles or manias.<br class=""/><br class=""/>Most people tend to extrapolate the present into the future. That works most of the time, but when it fails, it tends to fail in a big way.<br class=""/><br class=""/>The way in which many people use artificial intelligence actually exacerbates this phenomenon. <br/><br/>This interview explored that idea in-depth. One particularly pointed example is that AI is even better at historical pattern recognition than humans (when you can get the patterns you want structured in the data).<br/><br/>The tendency then is to engage in "curve fitting," effectively designing a strategy that would have worked great in the
+past, but may not work at all anymore.<br/><br/>History is a strictly <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGZXJnb2RpY2l0eSUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40617" style="margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline;"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">non-ergodic</span></a> process: we don't know what the future will look like but we know it won't look exactly like the past.<br/><br/>In an investing context, this means that anytime it's important to remember any time you see a great looking backtest or track record, that's it
+possible all you are seeing is someone effectively picking up nickels in front of a steamroller. <br/><br/>Just because they haven't gotten run over yet doesn't mean it couldn't happen.<br/></span></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<blockquote class="" style="margin: 0 0 0 40px; outline: none; padding: 0px; border: none;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none;
+padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><br class="" style='color: #000000; font-family: georgia, "times new roman";color: #000000; font-family: georgia, "times new roman"; font-size: 16px; font-weight: 400;'/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><br class="" style='color: #000000; font-family: georgia, "times new roman";color: #000000; font-family: georgia, "times new roman"; font-size: 16px; font-weight: 400;'/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; font-size: 16px;"><div class="" style="margin: 0; outline: none; padding: 0;"><div class="" style="margin: 0; outline: none; padding: 0; color: #000000;"><div class="" style="margin: 0; outline: none; padding:
+0; color: #000000;"> </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4299, #text_div4299 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4589" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_spacer style4589" id="layout-row4589" style=""><td id="layout-row-padding4589" style="padding: 0;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td height="10" valign="top"><div class="spacer" style="margin: 0; outline: none; padding: 0; height: 10px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td class="spacer-body" height="10" style="background-color:
+#f5f5f5;" valign="top" width="597"> </td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4580" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4580" id="layout-row4580" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4580" style="background-color: #ffffff; padding: 15px 40px 0px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4277" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family:
+Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; font-size: 16px; line-height: 1.4; mso-line-height-rule: exactly;"> <div style="margin: 0; outline: none; padding: 0; color: #000000;"> <div style="margin: 0; outline: none; padding: 0; color: #000000;"> <div style="margin: 0; outline: none; padding: 0; color: #000000;"> <div style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000;"><span class="" style='color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'>As always, if you're enjoying The Interesting Times, I'd love it if you shared it with a friend (or three). You can <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGbmV3c2xldHRlciUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40606" style="margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">send them here to sign up.</span></a> I try to make it one of the best emails you get every week and I'm always open to feedback on how to better do that.<br/><br/><span style='color: inherit; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'>If you'd like
+to see everything I'm reading, you can <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0d2l0dGVyLmNvbSUyRlRheWxvclBlYXJzb25NZSUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40621" style='margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline; font-family: georgia, "times new roman"; font-weight: inherit;' target="_blank"><span style='color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'>follow me on Twitter</span></a> or <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZjdGF5bG9ybXBlYXJzb24lMkYlM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFRoZSUyQkludGVyZXN0aW5nJTJCVGltZXMlMjUzQSUyQk1ldGFwaG9ycyUyQldlJTJCTGl2ZSUyQkJ5JTI2dXRtX2NhbXBhaWduJTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyQldlZWtseSUyQjA1LTIxLTIx&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40622" style='margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline; font-family: georgia, "times new roman"; font-weight: inherit;' target="_blank"><span style='color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'>LinkedIn</span></a> for articles and podcasts. I'm on <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cuZ29vZHJlYWRzLmNvbSUyRlRheWxvclBlYXJzb24lM0Z1dG1fc291cmNlJTNEQWN0aXZlQ2FtcGFpZ24lMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY29udGVudCUzRFRoZSUyQkludGVyZXN0aW5nJTJCVGltZXMlMjUzQSUyQk1ldGFwaG9ycyUyQldlJTJCTGl2ZSUyQkJ5JTI2dXRtX2NhbXBhaWduJTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyQldlZWtseSUyQjA1LTIxLTIx&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40623" style='margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline; font-family: georgia, "times new roman"; font-weight: inherit;' target="_blank"><span style='color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'>Goodreads</span></a> for books. Finally, if you read anything interesting this week, please hit reply and send it over!</span><br/><br/></span></div>
+ </div>
+ </div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4277, #text_div4277 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4587" style="padding: 5px; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_social style4587" id="layout-row4587" style=""><td id="layout-row-padding4587" style="padding: 7px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td><table cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" width="597"> <center style="margin: 0; outline: none; padding: 0; font-size: 0px;"> <table align="center" cellpadding="0" cellspacing="0" class="_ac_social_table" style="font-size:
+0; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: auto!important; display: inline-block!important; text-align: center!important;"><tbody><tr><td align="center" style="display:inline-block!important;font-size:0;width:40px!important;" valign="middle" width="40"><div class="__ac_social_icons" style="margin: 0; outline: none; padding: 0;"><a class="__ac_social_icon_link" href="http://threemagnolia.activehosted.com/social.php?c=1222&amp;m=1718&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;ref=facebook" id="facebook" style="margin: 0; outline: none; padding: 0; color: #0080ff;"><img border="0" src="https://threemagnolia.img-us6.com/_social_/flat-color-round-facebook.png" style="border: none;" width="40"/></a></div>
+</td>
+<td style="display:inline-block!important;font-size:0;width:40px!important;" width="40"> </td>
+<td align="center" style="display:inline-block!important;font-size:0;width:40px!important;" valign="middle" width="40"><div class="__ac_social_icons" style="margin: 0; outline: none; padding: 0;"><a class="__ac_social_icon_link" href="http://threemagnolia.activehosted.com/social.php?c=1222&amp;m=1718&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;ref=twitter" id="twitter" style="margin: 0; outline: none; padding: 0; color: #0080ff;"><img border="0" src="https://threemagnolia.img-us6.com/_social_/flat-color-round-twitter.png" style="border: none;" width="40"/></a></div>
+</td>
+<td style="display:inline-block!important;font-size:0;width:40px!important;" width="40"> </td>
+<td align="center" style="display:inline-block!important;font-size:0;width:40px!important;" valign="middle" width="40"><div class="__ac_social_icons" style="margin: 0; outline: none; padding: 0;"><a class="__ac_social_icon_link" href="http://threemagnolia.activehosted.com/social.php?c=1222&amp;m=1718&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;ref=linkedin" id="linkedin" style="margin: 0; outline: none; padding: 0; color: #0080ff;"><img border="0" src="https://threemagnolia.img-us6.com/_social_/flat-color-round-linkedin.png" style="border: none;" width="40"/></a></div>
+</td>
+<td style="display:inline-block!important;font-size:0;width:40px!important;" width="40"> </td>
+<td align="center" style="display:inline-block!important;font-size:0;width:40px!important;" valign="middle" width="40"><div class="__ac_social_icons" style="margin: 0; outline: none; padding: 0;"><a class="__ac_social_icon_link" href="http://threemagnolia.activehosted.com/p_f.php?nl=4&amp;c=1222&amp;m=1718&amp;s=85cdb3bc4a43641022e9d16fa2d24926" id="email" style="margin: 0; outline: none; padding: 0; color: #0080ff;"><img border="0" src="https://threemagnolia.img-us6.com/_social_/flat-color-round-email.png" style="border: none;" width="40"/></a></div>
+</td>
+</tr>
+</tbody></table>
+</center> </td>
+ </tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4584" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4584" id="layout-row4584" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4584" style="background-color: #ffffff; padding: 10px 40px 10px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4281" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit;
+font-family: Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div class="" data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; text-align: center; line-height: 1.4; mso-line-height-rule: exactly;"><span class="" style="color: inherit; font-size: 17px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span class="" style='color: inherit; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic; font-family: georgia, "times new roman";'> </span><div class="" style="margin: 0; outline: none; padding: 0; color: #000000; font-family: arial; font-size: 17px; font-style: normal; font-weight: 400; text-align: start;"></div>
+ <span class="" style='color: #000000; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic; font-family: georgia, "times new roman";'>The Interesting Times is a short note <span style='color: #000000; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman"; font-style: italic;'>to help you better invest your time and money in an uncertain world as well as a</span> digest of the most interesting things I find on the internet, centered around antifragility, complex systems, investing, technology, and decision making. Past editions are available <a data-ac-default-color="1" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGbmV3c2xldHRlciUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40606" style="margin: 0; outline: none; padding: 0; color: #0080ff; text-decoration: underline;" target="_blank"><span style="color: ; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">here</span></a>.</span><br class=""/></span></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4281, #text_div4281 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4590" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_spacer style4590" id="layout-row4590" style=""><td id="layout-row-padding4590" style="padding: 0;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td height="10" valign="top"><div class="spacer" style="margin: 0; outline: none; padding: 0; height: 10px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td class="spacer-body" height="10" style="background-color:
+#f5f5f5;" valign="top" width="597"> </td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4588" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4588" id="layout-row4588" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4588" style="background-color: #ffffff; padding: 15px 40px 0px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4285" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family:
+Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; font-size: 26px; line-height: 1.4; mso-line-height-rule: exactly;"> <div style="margin: 0; outline: none; padding: 0;"> <div style="margin: 0; outline: none; padding: 0; text-align: left;"><span class="" style='color: #424242; font-size: inherit; font-weight: bold; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'>Enjoy the Newsletter?</span></div>
+ </div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4285, #text_div4285 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4585" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4585" id="layout-row4585" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4585" style="background-color: #ffffff; padding: 0px 40px 10px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4282" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family:
+Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; text-align: center; line-height: 1.4; mso-line-height-rule: exactly;"><span style="color: inherit; font-size: 17px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span class="" style='color: inherit; font-size: 16px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic; font-family: georgia, "times new roman";'> </span><div style="margin: 0; outline: none; padding: 0; color: #000000; font-family: arial; font-size: 17px; font-style: normal; font-weight: 400; text-align: start;"></div>
+ <div style="margin: 0; outline: none; padding: 0; color: #000000; font-size: 16px; text-align: left;"><span class="" style='color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic; font-family: georgia, "times new roman";'> </span><div style="margin: 0; outline: none; padding: 0; text-align: left; color: #000000; font-weight: 400;"><span class="" style='color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic; font-family: georgia, "times new roman";'>Here are a few more things you might find interesting:</span></div>
+ </div>
+ </span></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4282, #text_div4282 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4586" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4586" id="layout-row4586" style="margin: 0; padding: 0; background-color: #ffffff;"><td id="layout-row-padding4586" style="background-color: #ffffff; padding: 10px 40px 10px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4283" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit;
+font-family: Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div class="" data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; text-align: center; line-height: 1.4; mso-line-height-rule: exactly;"><span class="" style="color: inherit; font-size: 17px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"><span class="" style='color: #000000; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic; font-family: georgia, "times new roman";'> </span><div class="" style="margin: 0; outline: none; padding: 0; color: #000000; font-family: arial; font-size: 17px; font-style: normal; font-weight: 400; text-align: start;"></div>
+ <div class="" style="margin: 0; outline: none; padding: 0; color: #000000; font-size: 20px; text-align: left;"><span class="" style='color: #000000; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic; font-family: georgia, "times new roman";'> </span><div class="" style="margin: 0; outline: none; padding: 0; text-align: center; color: #000000; font-size: 16px; font-weight: 400;"><span class="" style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic;"><span class="" style='color: #000000; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'> </span><div class="" style="margin: 0; outline: none; padding: 0; color: #000000; font-size: 14px; font-style: normal; font-weight: 400; text-align: start;"><span class="" style='color: #000000; font-size: inherit; font-weight:
+inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'><a href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGbmV3c2xldHRlci1hcmNoaXZlJTJGJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTI1M0ElMkJNZXRhcGhvcnMlMkJXZSUyQkxpdmUlMkJCeSUyNnV0bV9jYW1wYWlnbiUzRFRoZSUyQkludGVyZXN0aW5nJTJCVGltZXMlMkJXZWVrbHklMkIwNS0yMS0yMQ==&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40628" style="margin: 0; outline: none; padding: 0; color: #0174df; text-decoration: underline;" target="_blank"><span class="" style="color: #0174df; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Newsletter Past Editions</span></a>: Read past editions of The interesting Times Newsletter. </span></div>
+<div class="" style="margin: 0; outline: none; padding: 0; color: #000000; font-size: 14px; font-style: normal; font-weight: 400; text-align: start;"><br style='color: #000000; font-family: georgia, "times new roman";'/></div>
+<div class="" style="margin: 0; outline: none; padding: 0; color: #000000; font-size: 14px; font-style: normal; font-weight: 400; text-align: start;"><span class="" style='color: #000000; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'><a class="" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGYXJjaGl2ZSUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40629" style="margin: 0; outline: none; padding: 0; color: #0174df; text-decoration: underline;" target="_blank"><span class="" style="color: #0174df; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Interesting
+Essays</span></a>: Read my best, free essays on topics like bitcoin, investing, decision making and marketing.<br class="" style="color: #000000;"/><br class="" style="color: #000000;"/><a class="" href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGY29hY2hpbmctY29uc3VsdGluZyUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40630" style="margin: 0; outline: none; padding: 0; color: #0174df; text-decoration: underline;" target="_blank"><span class="" style="color: #0174df; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Consulting &amp; Advising</span></a>: Are you looking for help with making decisions around scaling your company from $500k to $5 million?
+I’ve been working with authors, entrepreneurs, and startups for half a decade to help them get more out of their businesses.<br/><br/><a href="https://threemagnolia.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZ0YXlsb3JwZWFyc29uLm1lJTJGdG9vbGtpdCUyRiUzRnV0bV9zb3VyY2UlM0RBY3RpdmVDYW1wYWlnbiUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jb250ZW50JTNEVGhlJTJCSW50ZXJlc3RpbmclMkJUaW1lcyUyNTNBJTJCTWV0YXBob3JzJTJCV2UlMkJMaXZlJTJCQnklMjZ1dG1fY2FtcGFpZ24lM0RUaGUlMkJJbnRlcmVzdGluZyUyQlRpbWVzJTJCV2Vla2x5JTJCMDUtMjEtMjE=&amp;a=223239693&amp;account=threemagnolia%2Eactivehosted%2Ecom&amp;email=jPp2LnjsDokEL%2B6o9cTdGWQOP8ZXmRzMvz3Yw%2BcA7gI%3D&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;i=1222A1718A4A40631" style='margin: 0; outline: none; padding: 0; color: #0174df; text-decoration: underline; font-family: georgia, "times new roman"; font-weight: inherit; font-style: normal;' target="_blank"><span class="" style="color: #0174df; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Internet Business Toolkit</span></a><span style='color: #000000; font-size: inherit; font-weight: 400; line-height: inherit;
+text-decoration: inherit; font-family: georgia, "times new roman"; font-style: normal;'>: </span><span style='color: #000000; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman"; font-style: normal;'>An exhaustive list of all the online tools I use to be more productive.<br/><br/></span></span></div>
+<span class="" style="color: #000000; font-size: 16px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: arial; font-style: normal; text-align: center;"> </span></span></div>
+ </div>
+ </span></div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4283, #text_div4283 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4594" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_spacer style4594" id="layout-row4594" style=""><td id="layout-row-padding4594" style="padding: 0;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td height="10" valign="top"><div class="spacer" style="margin: 0; outline: none; padding: 0; height: 10px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td class="spacer-body" height="10" style="background-color:
+#f5f5f5;" valign="top" width="597"> </td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4581" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_spacer style4581" id="layout-row4581" style=""><td id="layout-row-padding4581" style="padding: 0;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td height="10" valign="top"><div class="spacer" style="margin: 0; outline: none; padding: 0; height: 10px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td class="spacer-body" height="10" style="background-color:
+#f5f5f5;" valign="top" width="597"> </td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4583" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_spacer style4583" id="layout-row4583" style=""><td id="layout-row-padding4583" style="padding: 0 0px 0 0;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td height="10" valign="top"><div class="spacer" style="margin: 0; outline: none; padding: 0; height: 10px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td class="spacer-body" height="10" valign="top" width="597"> </td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4595" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4595" id="layout-row4595" style="margin: 0; padding: 0;"><td id="layout-row-padding4595" style="padding: 10px 40px 10px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4291" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; text-align: center; line-height: 1.4; mso-line-height-rule: exactly;"> <span class="" style='color: #999999; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'> <em>Futures and options trading involves a substantial risk of loss. You should therefore carefully consider whether such trading is appropriate for you in light of your financial condition. Unless distinctly noted otherwise, the data and graphs included herein are intended to be mere examples and exhibits of the topic discussed, are for educational and illustrative purposes only, and do not represent trading in actual accounts. Opinions expressed are that of the author. The mention of specific asset class performance (i.e. S&amp;P +3.2%, -4.6%) is based on the noted source index (i.e. S&amp;P 500 Index, etc.), and investors should take care to
+understand that any index performance is for the constituents of that index only, and does not represent the entire universe of possible investments within that asset class. And further, that there can be limitations and biases to indices such as survivorship, self-reporting, and instant history.</em><br/><br/><em>​</em><br/><strong>DISCLAIMER</strong><br/><br/><em>This email provides information regarding a commodity pool known as The Mutiny Fund LLC (the “Fund”), which is managed and operated by Attain Portfolio Advisors LLC and Black Pearl Management LLC (the “Manager”). TaylorPearson.Me is a registered DBA of Black Pearl Management, LLC. Investments in the Fund are only available to Accredited Investors as defined in Rule 501 of Regulation D of The Securities Act of 1933. This email is being provided for information and discussion purposes only and is qualified in its entirety by the information included in the Fund’s offering documents and supplements
+(collectively, the “Memorandum”) described herein. Any offer or solicitation of the Fund may be made only by delivery of the Memorandum. Before making any investment in the Fund, you should thoroughly review the Memorandum with your professional advisor(s) to determine whether an investment in the Fund is suitable for you in light of your investment objectives and financial situation. The Memorandum contains important information concerning risk factors, including a more comprehensive description of the risks and other material aspects of an investment in the Fund, and should be read carefully before any decision to invest is made.</em> </span> </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4291, #text_div4291 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4596" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4596" id="layout-row4596" style="margin: 0; padding: 0;"><td id="layout-row-padding4596" style="padding: 10px 40px 10px 40px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4292" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;" valign="top" width="517"> <div data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; text-align: center; line-height: 1.4; mso-line-height-rule: exactly;"> <span class="" style='color: #999999; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'> Three Magnolia , 2028 E Ben White BLVD #240-4117, Austin, Texas 78741, United States </span> </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4292, #text_div4292 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4577" style="padding: 0; background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial !important;" width="100%"><tbody><tr class="layout layout-row widget _widget_text style4577" id="layout-row4577" style="margin: 0; padding: 0;"><td id="layout-row-padding4577" style="padding: 10px 20px 10px 20px;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td align="left" class="td_text td_block" id="text_div4274" style="line-height: 140%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; text-decoration: inherit; font-family: Arial; mso-line-height-rule: exactly;" valign="top" width="557"> <div data-line-height="1.4" style="line-height: 140%; margin: 0; outline: none; padding: 0; line-height: 1.4; mso-line-height-rule: exactly; font-size: 12px;"> <span class="" style='color: inherit; font-size: 12px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'> </span><p style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: center;"><a class="" href="http://threemagnolia.activehosted.com/proc.php?nl=4&amp;c=1222&amp;m=1718&amp;s=85cdb3bc4a43641022e9d16fa2d24926&amp;act=unsub" style="margin: 0; outline: none; padding: 0; color: #999999; text-decoration: underline;" target="_blank"><span class="" style='color: #999999; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: georgia, "times new roman";'>Unsubscribe</span></a><br/></p>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div4274, #text_div4274 div { line-height: 140% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr style="background-color: #ffffff;"><td id="layout-row-margin4592" style="background-color: #ffffff;" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr class="layout layout-row widget _widget_spacer" id="layout-row4592"><td id="layout-row-padding4592" valign="top"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td height="30" valign="top"><div class="spacer" style="margin: 0; outline: none; padding: 0; height: 30px;"><table border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%"><tbody><tr><td class="spacer-body" height="30" valign="top" width="597"> </td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+<br/><br clear="all"/>
+</body></html>
